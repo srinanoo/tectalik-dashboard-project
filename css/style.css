@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'PlusSans';
-    src: url(fonts/PlusJakartaSans-Bold.ttf);
+    font-family: 'PlusSans'
+    src: url(../fonts/PlusJakartaSans-Bold.ttf); main
 }
 
 * {
@@ -13,6 +13,16 @@ img {
 
 body {
     margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--black);
+}
+
+:root {
+    --black: rgb(17, 25, 39);
+    --gray: rgb(108, 115, 127);
+    --white: rgb(255, 255, 255);
+    --blue: rgb(99, 102, 241);
+
 }
 
 .fixed {
@@ -39,7 +49,8 @@ body {
 }
 
 .scroll::-webkit-scrollbar-thumb {
-    background-color: rgba(157, 164, 174, 0.516);
+    background-color: var(--gray);
+main
     height: 35%;
     border-radius: 5px;
 }
@@ -51,11 +62,10 @@ body {
 
 .main {
     width: 82%;
-    margin-left: 20%;
+    margin-left: 18%;
 
 }
 
-/************************** SANJAY KUMAR L **********************/
 
 .invoice {
     font-family: Inter;
@@ -66,6 +76,28 @@ body {
 .in {
     display: grid;
     grid-template-columns: 30% 20%;
+=======
+    margin-left: 18%;
+
+}
+
+.main h1 {
+    font-family: PlusSans;
+}
+
+.c-container {
+    width: 95%;
+    margin: auto;
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-row1,
+.c-c2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -223,7 +255,7 @@ body {
     justify-content: end;
 }
 
-/************************** SANJAY KUMAR L *********************/
+
 #ins{
     padding: 10px 0;
 }
@@ -299,3 +331,530 @@ body {
     grid-column: span 4;
 }
 
+=======
+.c-c1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-c2 {
+    padding: 10px 0px;
+}
+
+.c-c2 button {
+    border: 0;
+    display: flex;
+    align-items: center;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 7px 12px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.c-c2 button:hover {
+    background-color: lightgrey;
+
+}
+
+.c-row1 h2 {
+    margin: 0px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.c-c3 button {
+    background-color: rgb(99, 102, 241);
+    color: white;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.c-box-shadow {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 5px 22px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.5px;
+}
+
+.c-row2 {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 5px 22px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.5px;
+    padding: 20px 0px;
+}
+.c-row2>div a {
+    text-decoration: none;
+    margin-left: 25px;
+    padding: 10px 0px;
+    color: rgb(108, 115, 127);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.c-row2>div a:hover {
+    text-decoration: underline rgb(99, 102, 241) 2px;
+    color: rgb(99, 102, 241);
+
+}
+
+.c-row3 {
+    display: grid;
+    grid-template-columns: 57% 37%;
+    justify-content: space-between;
+    align-items: end;
+    padding: 20px 20px;
+}
+.c-c4,.c-c5{
+    position: relative;
+}
+
+.c-c4 [type="search"]{
+    width: 100%;
+    padding: 15px 30px;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+
+}
+.c-c4 ::placeholder{
+    padding-left: 5px;
+    color: rgb(108, 115, 127);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+.c-c4 img {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+
+#search:focus,#val:focus {
+    outline: 5px solid rgb(99, 102, 241);
+    border-radius: 8px;
+    border: 0;
+}
+.c-row3,.c-row4,.c-row5,.c-bottom{
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 5px 22px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.5px;
+}
+#val:focus~[for="val"]{
+    color:blue
+}
+select#val{
+    padding: 15px;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-weight: 500;
+}
+.c-c5 label{
+    position: absolute;
+    top: 3px;
+    left: 9px;
+    font-size: small;
+    color: rgb(108, 115, 127);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+.c-c5 label:focus{
+    text-decoration: underline rgb(99, 102, 241) ;
+}
+.c-row4,.c-row5{
+    display: grid;
+    grid-template-columns: 5% 34% 19% 10% 10% 10%;
+    justify-content: space-between;
+    padding: 15px 16px;
+    align-items: center;
+}
+.c-row4{
+    background-color: rgb(248, 249, 250);
+    padding: 15Px;
+}
+.c-row4>div{
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: rgb(47, 55, 70);
+}
+.c-row5:hover{
+    background-color: rgb(248, 249, 250);
+}
+.c-name{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.c-name img{
+    border-radius: 50%;
+}
+.c-iname,.c-row4>div:nth-child(2){
+    margin: 0px 0px 0px 8px;
+}
+.c-iname,.c-loc,.c-ord,.c-spent{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+.c-iname a{
+    margin: 0px;
+    text-decoration: none;
+    color: inherit;
+}
+.c-iname p{
+    margin: 0px;
+    color: rgb(108, 115, 127);
+}
+.c-loc p,.c-ord p,.c-spent{
+    margin: 0;
+    border-bottom: 1px solid rgb(242, 244, 247);
+    text-align: left;
+    color: rgb(17, 25, 39);
+    
+}
+.c-row5>div,.c-row4>div{
+    padding: 15px;
+}
+.c-act>div{
+    text-align: end;
+}
+.c-spage{
+    display: none;
+}
+.c-bottom{
+    display: grid;
+    grid-template-columns: auto 15% 15% 15%;
+    justify-content: flex-end;
+    justify-items: end;
+}
+.c-row p,.c-num{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(17, 25, 39);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+select#num{
+    border:0;
+    margin-left: 4px;
+    padding: 21px;
+
+}
+select#num:focus{
+    outline: none;
+}
+.c-num{
+    padding: 8px;
+    margin-top: 8px;
+}
+.c-arrow{
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.blog-box {
+    width: 96%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.098);
+}
+
+header>div:first-child {
+    display: flex;
+}
+
+.blog-margin {
+    padding-top: 30px;
+}
+
+.blog-h2 {
+    font-family: PlusSans;
+    margin-top: 50px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.blog-r1 a {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.57;
+    color: var(--black);
+}
+
+.blog-r1 ul {
+    margin: 0;
+    padding: 0;
+}
+
+.blog-r1 ul li {
+    display: inline-block;
+}
+
+.blog-r1 ul li:nth-of-type(even) {
+    background-color: var(--gray);
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    margin: 0px 5px 3px;
+}
+
+.blog-r1 ul li:last-child a {
+    color: var(--gray);
+    cursor: text;
+}
+
+.blog-r1 li a:hover:not(li:last-child a),
+.blog-r3 a:hover {
+    text-decoration: underline black;
+}
+
+/* ***************************Blog-first-page********************** */
+.blog-r2 {
+    padding: 16px 24px;
+    margin: 48px 0 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 30px;
+    border-radius: 8px;
+}
+
+.blog-r2 h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.57;
+    margin: 0;
+}
+
+.blog-r2 a {
+    color: white;
+    background-color: rgb(99, 102, 241);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 5px;
+    border-radius: 12px;
+    padding: 8px 20px;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    font-weight: 600;
+}
+
+.blog-p {
+    color: var(--gray);
+    line-height: 1.75;
+}
+
+.blog-p>p:first-child {
+    margin: 16px 0 0;
+}
+
+.blog-p>p:last-child {
+    margin: 0;
+}
+
+.blog-hr {
+    margin: 30px 16px;
+    border: solid rgb(242, 244, 247);
+    border-width: 0px 0px thin;
+}
+
+.blog-r3 {
+    display: grid;
+    grid-template-columns: repeat(2, 48.5%);
+    gap: 17px;
+    justify-content: space-between;
+}
+
+.blog-r3>div {
+    border: solid 1px rgb(247, 243, 243);
+    border-radius: 20px;
+}
+
+.blog-r3>div a:first-child {
+    display: block;
+    height: 280px;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-r3>div>div {
+    padding: 25px;
+}
+
+.blog-r3>div>div>p:first-child {
+    background-color: rgb(226 227 229);
+    display: inline-block;
+    padding: 5px 15px;
+    line-height: 1.75;
+    border-radius: 30px;
+    font-size: 0.78rem;
+}
+
+.blog-r3 h3 {
+    color: var(--black);
+    font-size: 1.4rem;
+    font-family: PlusSans;
+    margin: 10px 0 0;
+}
+
+.blog-r3>div>div p:not(:first-child) {
+    color: var(--gray);
+}
+
+.blog-c1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-c1>div {
+    display: flex;
+    align-items: center;
+}
+
+.blog-c1>div>div {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.blog-c1 img {
+    border-radius: 50%;
+}
+
+.blog-c1 h5 {
+    font-weight: 500;
+}
+
+.blog-c1 p {
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.blog-r4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 50px;
+    font-weight: 600;
+}
+
+.blog-r4 [type="button"] {
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.blog-r4 div:first-child {
+    padding-right: 30px;
+}
+
+.blog-r4 div:last-child {
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    color: var(--blue);
+    transition: all 100ms;
+}
+
+.blog-r4 div:first-child i {
+    margin-right: 10px;
+    color: rgb(183 183 183);
+}
+
+.blog-r4 i:last-child {
+    margin-left: 10px;
+}
+
+.blog-r4 div:last-child:active {
+    background-color: rgba(120, 119, 119, 0.237);
+}
+
+/* ***************************Blog-first-page-******************* */
+.blog-r5 {
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 5px 1px;
+    padding: 50px 50px 60px 50px;
+    margin: 30px 0 60px;
+}
+
+.blog-r5>div {
+    display: grid;
+    grid-template-columns: 50% 47%;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.blog-r5 p {
+    margin: 0 0 25px 0;
+    color: var(--gray);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.blog-label input {
+    padding: 30px 10px 10px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgb(219, 215, 215);
+    transition-property: all;
+    transition-duration: 100ms;
+}
+
+.blog-label {
+    position: relative;
+}
+
+label[for="e1"] {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    cursor: text;
+    color: var(--gray);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 200ms;
+}
+
+.blog-label input:focus {
+    outline: var(--blue) 3px solid;
+}
+
+.blog-label input:focus~label[for="e1"] {
+    font-size: 0.8rem;
+    top: 5px;
+    color: var(--blue);
+}
+
+.blog-sub {
+    background-color: var(--blue);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.blog-r5>div>div:last-child {
+    background-image: url(../images/blog-bell.svg);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
