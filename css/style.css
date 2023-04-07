@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'PlusSans';
+    src: url(../fonts/PlusJakartaSans-Bold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(28 37 54);
+    display: flex;
+    flex-direction: column;
+    color: rgb(127 135 146);
+}
+
+.scroll {
+    overflow: auto;
+    padding: 20px;
+    visibility: hidden;
+    transition: all 300ms;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(157, 164, 174, 0.516);
+    height: 35%;
+    border-radius: 5px;
+}
+
+.scrollinner,
+.scroll:hover {
+    visibility: visible;
+}
+
+.main {
+    width: 80%;
+    margin-left: 20%;
+
+
+}
+
+.main h1 {
+    font-family: PlusSans;
+}
+header{
+    position: sticky;
+    top:0;
+   
+    
+}
+
+
