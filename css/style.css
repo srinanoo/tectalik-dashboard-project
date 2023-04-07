@@ -2,6 +2,7 @@
     font-family: 'PlusSans';
     src: url(../fonts/PlusJakartaSans-Bold.ttf);
 }
+
 * {
     box-sizing: border-box;
 }
@@ -12,6 +13,15 @@ img {
 
 body {
     margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--black);
+}
+
+:root {
+    --black: rgb(17, 25, 39);
+    --gray: rgb(108, 115, 127);
+    --white: rgb(255, 255, 255);
+    --blue: rgb(99, 102, 241);
 }
 
 .fixed {
@@ -38,7 +48,7 @@ body {
 }
 
 .scroll::-webkit-scrollbar-thumb {
-    background-color: rgba(157, 164, 174, 0.516);
+    background-color: var(--gray);
     height: 35%;
     border-radius: 5px;
 }
@@ -298,6 +308,306 @@ select#num:focus{
     margin-top: 15px;
     margin-right: 15px;
 }
-.
 
+.blog-box {
+    width: 96%;
+    margin: auto;
+}
 
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.098);
+}
+
+header>div:first-child {
+    display: flex;
+}
+
+.blog-margin {
+    padding-top: 30px;
+}
+
+.blog-h2 {
+    font-family: PlusSans;
+    margin-top: 50px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.blog-r1 a {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.57;
+    color: var(--black);
+}
+
+.blog-r1 ul {
+    margin: 0;
+    padding: 0;
+}
+
+.blog-r1 ul li {
+    display: inline-block;
+}
+
+.blog-r1 ul li:nth-of-type(even) {
+    background-color: var(--gray);
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    margin: 0px 5px 3px;
+}
+
+.blog-r1 ul li:last-child a {
+    color: var(--gray);
+    cursor: text;
+}
+
+.blog-r1 li a:hover:not(li:last-child a),
+.blog-r3 a:hover {
+    text-decoration: underline black;
+}
+
+/* ***************************Blog-first-page********************** */
+.blog-r2 {
+    padding: 16px 24px;
+    margin: 48px 0 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 30px;
+    border-radius: 8px;
+}
+
+.blog-r2 h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.57;
+    margin: 0;
+}
+
+.blog-r2 a {
+    color: white;
+    background-color: rgb(99, 102, 241);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 5px;
+    border-radius: 12px;
+    padding: 8px 20px;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    font-weight: 600;
+}
+
+.blog-p {
+    color: var(--gray);
+    line-height: 1.75;
+}
+
+.blog-p>p:first-child {
+    margin: 16px 0 0;
+}
+
+.blog-p>p:last-child {
+    margin: 0;
+}
+
+.blog-hr {
+    margin: 30px 16px;
+    border: solid rgb(242, 244, 247);
+    border-width: 0px 0px thin;
+}
+
+.blog-r3 {
+    display: grid;
+    grid-template-columns: repeat(2, 48.5%);
+    gap: 17px;
+    justify-content: space-between;
+}
+
+.blog-r3>div {
+    border: solid 1px rgb(247, 243, 243);
+    border-radius: 20px;
+}
+
+.blog-r3>div a:first-child {
+    display: block;
+    height: 280px;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-r3>div>div {
+    padding: 25px;
+}
+
+.blog-r3>div>div>p:first-child {
+    background-color: rgb(226 227 229);
+    display: inline-block;
+    padding: 5px 15px;
+    line-height: 1.75;
+    border-radius: 30px;
+    font-size: 0.78rem;
+}
+
+.blog-r3 h3 {
+    color: var(--black);
+    font-size: 1.4rem;
+    font-family: PlusSans;
+    margin: 10px 0 0;
+}
+
+.blog-r3>div>div p:not(:first-child) {
+    color: var(--gray);
+}
+
+.blog-c1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-c1>div {
+    display: flex;
+    align-items: center;
+}
+
+.blog-c1>div>div {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.blog-c1 img {
+    border-radius: 50%;
+}
+
+.blog-c1 h5 {
+    font-weight: 500;
+}
+
+.blog-c1 p {
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.blog-r4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 50px;
+    font-weight: 600;
+}
+
+.blog-r4 [type="button"] {
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.blog-r4 div:first-child {
+    padding-right: 30px;
+}
+
+.blog-r4 div:last-child {
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    color: var(--blue);
+    transition: all 100ms;
+}
+
+.blog-r4 div:first-child i {
+    margin-right: 10px;
+    color: rgb(183 183 183);
+}
+
+.blog-r4 i:last-child {
+    margin-left: 10px;
+}
+
+.blog-r4 div:last-child:active {
+    background-color: rgba(120, 119, 119, 0.237);
+}
+
+/* ***************************Blog-first-page-******************* */
+.blog-r5 {
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 5px 1px;
+    padding: 50px 50px 60px 50px;
+    margin: 30px 0 60px;
+}
+
+.blog-r5>div {
+    display: grid;
+    grid-template-columns: 50% 47%;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.blog-r5 p {
+    margin: 0 0 25px 0;
+    color: var(--gray);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.blog-label input {
+    padding: 30px 10px 10px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgb(219, 215, 215);
+    transition-property: all;
+    transition-duration: 100ms;
+}
+
+.blog-label {
+    position: relative;
+}
+
+label[for="e1"] {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    cursor: text;
+    color: var(--gray);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 200ms;
+}
+
+.blog-label input:focus {
+    outline: var(--blue) 3px solid;
+}
+
+.blog-label input:focus~label[for="e1"] {
+    font-size: 0.8rem;
+    top: 5px;
+    color: var(--blue);
+}
+
+.blog-sub {
+    background-color: var(--blue);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.blog-r5>div>div:last-child {
+    background-image: url(../images/blog-bell.svg);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
