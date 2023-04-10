@@ -71,6 +71,38 @@ body {
     margin: auto;
 }
 
+#previous,
+#next,
+#up,
+#filter,
+#pls,
+#fils {
+    display: none;
+}
+
+.invoice-2 {
+    display: none;
+}
+
+#next:checked~.invoice-2 {
+    display: block;
+}
+
+#next:checked~.invoice {
+    display: none;
+}
+
+.invoice-2 {
+    font-family: Inter;
+    width: 90%;
+    margin: auto;
+}
+
+.invoice,
+.invoice-2 {
+    position: relative;
+}
+
 .in {
     display: grid;
     grid-template-columns: 30% 20%;
