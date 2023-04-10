@@ -485,7 +485,8 @@ img {
     cursor: pointer;
 }
 
-.c-box-shadow,.c-box-shadow1 {
+.c-box-shadow,
+.c-box-shadow1 {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 5px 22px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.5px;
 }
@@ -496,19 +497,24 @@ img {
     box-shadow: rgba(0, 0, 0, 0.04) 0px 5px 22px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.5px;
     padding: 20px 0px;
 }
-.c-three a:not(:first-child){
+
+.c-three a:not(:first-child) {
     margin-left: 25px;
 }
-.c-row2>div a{
+
+.c-row2>div a {
     margin-left: 25px;
 }
-.c-row2>div a,.c-three a {
+
+.c-row2>div a,
+.c-three a {
     text-decoration: none;
     padding: 10px 0px;
     color: rgb(108, 115, 127);
 }
 
-.c-row2>div a:hover,.c-three a:hover {
+.c-row2>div a:hover,
+.c-three a:hover {
     text-decoration: underline rgb(99, 102, 241) 2px;
     color: rgb(99, 102, 241);
 
@@ -720,81 +726,100 @@ input[type=radio] {
 #aone:checked~.c-spage {
     display: none;
 }
-.c-link{
+
+.c-link {
     display: grid;
     grid-template-columns: 15% 85%;
     align-items: center;
 }
-.c-link{
+
+.c-link {
     width: 20%;
 }
-.c-link a,.c-edit a{
+
+.c-link a,
+.c-edit a {
     text-decoration: none;
     color: black;
     font-weight: 600;
 }
-.c-link a:hover{
+
+.c-link a:hover {
     text-decoration: underline;
 }
-.c-user{
+
+.c-user {
     display: flex;
     flex-direction: row;
 }
-.c-user1{
-    width:70%;
+
+.c-user1 {
+    width: 70%;
     margin: 60px 0px;
 }
-.c-user1{
+
+.c-user1 {
     display: grid;
     grid-template-columns: 15% 82%;
     align-items: center;
     justify-content: space-between;
 }
-.c-user1 img{
+
+.c-user1 img {
     border-radius: 50px;
 }
-.c-user2{
+
+.c-user2 {
     display: grid;
     grid-template-rows: auto;
 }
-.c-user2>div:first-child{
+
+.c-user2>div:first-child {
     font-size: 600;
-    font-family: 'PlusSans' ;
+    font-family: 'PlusSans';
     font-size: x-large;
 }
-.c-user2>div:nth-child(2){
+
+.c-user2>div:nth-child(2) {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-family: 'PlusSans' ;
+    font-family: 'PlusSans';
     margin-top: 10px;
 }
-.c-user2>div:nth-child(2) span{
+
+.c-user2>div:nth-child(2) span {
     background-color: rgba(17, 25, 39, 0.12);
     border-radius: 16px;
     padding: 5px 8px;
 }
-.c-user3{
-    width:30%;
+
+.c-user3 {
+    width: 30%;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center;
     text-align: end;
 }
-.c-edit{
-    width:50%;
+
+.c-edit {
+    width: 50%;
     padding: 10px 20px;
 }
-.c-action{
-    width:50%;
+
+.c-action {
+    width: 50%;
 }
-.c-edit{
+
+.c-edit {
     display: grid;
     grid-template-columns: 40% auto;
     align-items: center;
     justify-content: end;
 }
-.c-action button, .c-email button{
+
+.c-action button,
+.c-email button {
     color: rgb(255, 255, 255);
     background-color: rgb(99, 102, 241);
     box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 5px;
@@ -805,41 +830,51 @@ input[type=radio] {
     font-size: medium;
     font-weight: 500;
 }
-.c-action>button img{
+
+.c-action>button img {
     position: relative;
-    top:5px;
-    left:5px;
+    top: 5px;
+    left: 5px;
 }
-.c-three{
+
+.c-three {
     display: flex;
     margin-top: 50px;
     margin-left: 0px;
 }
-hr{
+
+hr {
     padding: 0;
     margin: 0;
-    border:thin solid rgb(242, 244, 247);
+    border: thin solid rgb(242, 244, 247);
 }
-.c-box1,.c-box2{
+
+.c-box1,
+.c-box2 {
     padding: 9px 20px;
 }
-.c-box1 h3{
+
+.c-box1 h3 {
     font-family: 'PlusSans';
 }
-.c-box1 h4{
+
+.c-box1 h4 {
     margin: 0;
 }
-.c-box1 p{
+
+.c-box1 p {
     color: rgb(108, 115, 127);
     font-weight: 400;
     margin: 0;
     line-height: 2;
 }
-.c-box2{
+
+.c-box2 {
     display: flex;
 }
-.c-box2>div{
-    color:rgb(99, 102, 241);
+
+.c-box2>div {
+    color: rgb(99, 102, 241);
     background-color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -847,31 +882,39 @@ hr{
     margin-right: 20px;
     border: 1px solid rgb(99, 102, 241);
 }
-.c-box2>div:hover,.c-email button:hover{
+
+.c-box2>div:hover,
+.c-email button:hover {
     background-color: rgb(194, 179, 230);
 }
-.c-main-box{
+
+.c-main-box {
     display: grid;
     grid-template-columns: 35% 60%;
     justify-content: space-between;
     margin-top: 25px;
     align-items: start;
 }
-.c-box-shadow1{
+
+.c-box-shadow1 {
     margin-bottom: 30px;
 }
-.c-email button{
+
+.c-email button {
     margin-top: 20px;
 }
-.c-ethree{
+
+.c-ethree {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-.c-ethree>div{
+
+.c-ethree>div {
     padding: 15px 0px;
 }
-.c-box3>div{
-    color:red;
+
+.c-box3>div {
+    color: red;
     background-color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -879,16 +922,19 @@ hr{
     margin-right: 20px;
     border: 1px solid red;
 }
-.c-box3{
+
+.c-box3 {
     display: flex;
 }
+
 .c-p {
     margin: 0;
-    color:rgb(108, 115, 127);
+    color: rgb(108, 115, 127);
     font-size: smaller;
     margin-top: 10px;
     line-height: 1.5;
 }
+
 .blog-box {
     width: 96%;
     margin: auto;
