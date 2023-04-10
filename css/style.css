@@ -1629,6 +1629,7 @@ label[for="filter-to"] {
     max-height: 200px;
     width: 100%;
     overflow-y: scroll;
+}
 .log_box_container{
     width:95%;
     margin:auto;
