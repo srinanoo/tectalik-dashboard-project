@@ -105,7 +105,7 @@ img {
 
 .in {
     display: grid;
-    grid-template-columns: 30% 20%;
+    grid-template-columns: 30% 15%;
     justify-content: space-between;
     align-items: center;
 }
@@ -164,7 +164,7 @@ label[for="up"]:hover {
 label[for="filter"]:hover {
     background-color: rgb(238, 235, 235);
     border-radius: 10px;
-    padding: 10px 5px;
+    padding: 10px 12px;
 }
 
 #filter:checked~.invoice,
@@ -210,10 +210,12 @@ label[for="filter"]:hover {
 
 .but button:nth-child(2) {
     position: absolute;
-    background-color: #ffffff;
+    background-color: #dce0df;
     border: 1px white;
     color: #050505;
     display: none;
+    padding: 10px 14px;
+
 }
 
 .gri-3 {
@@ -377,7 +379,7 @@ label[for="filter"]:hover {
 
 .in .as>div:first-child {
     font-weight: 800;
-    padding: 15px;
+    padding: 22px 8px;
 }
 
 .in .as>div:nth-child(2)>p {
