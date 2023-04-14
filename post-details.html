@@ -24,19 +24,19 @@
         </div>
     </div>
     <div class="main">
-        <div class="blog-box">
-            <header>
+        <header>
+            <div>
                 <div>
-                    <div>
-                        <label for="#open">&#x2630</label>
-                    </div>
-                    <div>
-                        <img src="images/search-interface-symbol.png" alt="">
-                    </div>
+                    <label for="#open">&#x2630</label>
                 </div>
-                <div></div>
-                <div></div>
-            </header>
+                <div>
+                    <img src="images/search-interface-symbol.png" alt="">
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+        </header>
+        <div class="blog-box">
             <div class="blog-margin">
                 <h2 class="blog-h2">Post</h2>
             </div>
@@ -200,7 +200,9 @@
         </div>
     </div>
     <nav class="dashboard-settings-nav">
-        <label for="settings"><i class="fa-solid fa-gear"></i></label>
+        <label for="settings">
+            <i class="fa-solid fa-gear"></i>
+        </label>
         <input type="radio" name="set" id="settings">
         <div class="settings-block">
             <div class="settings-block-header">
@@ -211,16 +213,13 @@
             <div class="settings-block-color">
                 <h5>primary color</h5>
                 <div>
-                    <input type="radio" name="color" id="green">
-                    <label for="green">Green</label>
+                    <label for="green"><input type="radio" name="color" id="green"> Green</label>
                 </div>
                 <div>
-                    <input type="radio" name="color" id="pink">
-                    <label for="pink">Pink</label>
+                    <label for="pink"><input type="radio" name="color" id="pink"> Pink</label>
                 </div>
                 <div>
-                    <input type="radio" name="color" id="orange">
-                    <label for="orange">Orange</label>
+                    <label for="orange"><input type="radio" name="color" id="orange"> Orange</label>
                 </div>
                 <div>
                     <input type="radio" name="color" id="blue" checked>
@@ -231,18 +230,33 @@
                 <h5>color schema</h5>
                 <div>
                     <input type="radio" name="theme" id="light">
-                    <i class="fa-regular fa-sun-bright"></i>
-                    <label for="light">Light</label>
+                    <label for="light"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                            <path fill="#fff" fill-opacity="0.01"
+                                d="M12 15.5c2.4853 0 4.5-2.0147 4.5-4.5S14.4853 6.5 12 6.5 7.5 8.5147 7.5 11s2.0147 4.5 4.5 4.5Z">
+                            </path>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 2v1.8m0 14.4V20m-7.2-9H3m3.8827-5.1173L5.6099 4.6099m11.5074 1.2728 1.2728-1.2728M6.8827 16.121l-1.2728 1.2728m11.5074-1.2728 1.2728 1.2728M21 11h-1.8m-2.7 0c0 2.4853-2.0147 4.5-4.5 4.5S7.5 13.4853 7.5 11 9.5147 6.5 12 6.5s4.5 2.0147 4.5 4.5Z">
+                            </path>
+                        </svg>
+                        Light
+                    </label>
                 </div>
                 <div>
                     <input type="radio" name="theme" id="dark">
-                    <i class="fa-sharp fa-light fa-moon"></i>
-                    <label for="dark">Dark</label>
+                    <label for="dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                            <path fill="#fff" fill-opacity="0.01" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2"
+                                d="M22 15.8442c-1.3134.594-2.7714.9246-4.3065.9246-5.7782 0-10.4623-4.6841-10.4623-10.4623 0-1.5351.3306-2.9931.9246-4.3065C4.5258 3.6416 2 7.2947 2 11.5377 2 17.3159 6.6841 22 12.4623 22c4.243 0 7.8961-2.5258 9.5377-6.1558Z">
+                            </path>
+                        </svg>
+                        Dark
+                    </label>
                 </div>
             </div>
         </div>
     </nav>
     <script src="https://kit.fontawesome.com/8d92229b07.js" crossorigin="anonymous"></script>
+    <script src="theme.js"></script>
 </body>
 
 </html>

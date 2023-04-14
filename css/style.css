@@ -25,6 +25,8 @@ img {
     --program: rgba(17, 25, 39, 0.12);
     --nav-color: rgb(254, 255, 255);
     --details-color: rgb(243 244 246);
+    --primary: rgb(99, 102, 241);
+    --background-color: rgb(255, 255, 255);
 }
 
 a {
@@ -66,6 +68,10 @@ a {
 }
 
 /* **********************settings-css-st********************* */
+/* .settings-block.active {
+    display: block;
+} */
+
 .dashboard-settings-nav {
     position: fixed;
     bottom: 40px;
@@ -78,10 +84,17 @@ a {
     padding: 10px;
     background-color: var(--primary);
     border-radius: 50%;
-    /* line-height: 0.8em; */
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 30px;
-    /* text-align: center; */
+}
+
+.dashboard-settings-nav label[for="settings"] i {
+    transition: all 700ms;
+}
+
+.dashboard-settings-nav label[for="settings"]:hover i {
+    color: black;
+    transform: rotate(360deg);
 }
 
 .dashboard-settings-nav label[for="settings-end"] {
@@ -148,6 +161,7 @@ a {
     display: grid;
     grid-template-columns: repeat(4, 23%);
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .settings-block h5 {
@@ -172,16 +186,23 @@ a {
     font-size: 0.8125rem;
     cursor: pointer;
     font-weight: 600;
+    display: flex;
+    align-items: center;
 }
 
 .settings-block-color>div input[type="radio"] {
     appearance: none;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     border: 3px solid var(--radio-color, currentColor);
     border-radius: 50%;
     cursor: pointer;
+    margin: 0 12px 0 0;
+}
+
+.settings-block-theme svg {
     margin-right: 10px;
+    color: var(--gray);
 }
 
 .settings-block-color>div #green {
@@ -212,9 +233,9 @@ a {
     --primary: rgb(221, 32, 174);
 }
 
-:root:has(#blue:checked) {
+/* :root:has(#blue:checked) {
     --primary: rgb(99, 102, 241);
-}
+} */
 
 :root:has(#orange:checked) {
     --primary: rgb(255, 102, 0);
@@ -238,19 +259,21 @@ a {
     --dark: rgb(160, 174, 192);
     --gray: rgb(160, 174, 192);
     --program: rgba(243, 244, 246, 0.12);
-    --nav-color: rgb(28 37 54);
+    --nav-color: rgb(17, 25, 39);
     --details-color: rgb(28 37 54);
+    --background-color: rgb(17, 25, 39);
+    --dashed-color: rgb(45, 55, 72);
 }
 
 .dashboard-settings-nav #settings:checked+.settings-block {
     display: block;
 }
 
+
 /* ***********************settings-css-end******************* */
 .main {
     width: 82%;
     margin-left: 18%;
-
 }
 
 .invoice {
@@ -656,7 +679,7 @@ label[for="filter"]:hover {
 }
 
 
-@font-face {
+/* @font-face {
     font-family: 'PlusSans';
     src: url(../fonts/PlusJakartaSans-Bold.ttf);
 }
@@ -716,9 +739,9 @@ img {
 .scrollinner,
 .scroll:hover {
     visibility: visible;
-}
+} */
 
-.main {
+/* .main {
     width: 82%;
     margin-left: 18%;
 
@@ -727,7 +750,7 @@ img {
 
 .main h1 {
     font-family: PlusSans;
-}
+} */
 
 .c-container {
     width: 95%;
@@ -1018,9 +1041,9 @@ label {
     cursor: pointer;
 }
 
-input[type=radio] {
+/* input[type=radio] {
     display: none;
-}
+} */
 
 #atwo:checked~.c-spage,
 #aone:checked~.c-fpage {
@@ -1240,20 +1263,22 @@ hr {
     line-height: 1.5;
 }
 
+/* ****************Blog-full-style-start***************************** */
 .blog-box {
     width: 96%;
     margin: auto;
 }
 
-/* ****************Blog-full-style-start***************************** */
 header {
     display: flex;
     flex-wrap: wrap;
     position: sticky;
-    z-index: -2;
+    /* z-index: -2; */
     top: 0;
-    width: 80%;
+    padding: 0 24px;
+    /* filter: blur(10px); */
     background-color: var(--white);
+    /* height: 100px; */
 }
 
 header>div:first-child {
@@ -1317,6 +1342,7 @@ header>div:first-child {
     justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 30px;
     border-radius: 8px;
+    background-color: var(--background-color);
 }
 
 .blog-r2 h6 {
@@ -1365,7 +1391,7 @@ header>div:first-child {
 }
 
 .blog-r3>div {
-
+    background-color: var(--background-color);
     border-radius: 20px;
 }
 
@@ -1501,6 +1527,7 @@ header>div:first-child {
     box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 5px 1px;
     padding: 50px 50px 60px 50px;
     margin: 30px 0 60px;
+    background-color: var(--background-color);
 }
 
 .blog-r5>div {
@@ -1535,7 +1562,11 @@ header>div:first-child {
     position: relative;
 }
 
-label[for="e1"] {
+label[for="e1"],
+label[for="pt"],
+label[for="sd"],
+label[for="seo"],
+label[for="seod"] {
     position: absolute;
     top: 20px;
     left: 15px;
@@ -1544,15 +1575,17 @@ label[for="e1"] {
     font-size: 0.9rem;
     font-weight: 500;
     transition: all 200ms;
-    /* transform: translate(12px, 6px) scale(0.85);
-    transform: translate(12px, 18px) scale(1); */
 }
 
 .blog-label input:focus {
     outline: var(--primary) 3px solid;
 }
 
-.blog-label input:focus~label[for="e1"] {
+.blog-label input:focus~label[for="e1"],
+.blog-label input:focus~label[for="pt"],
+.blog-label input:focus~label[for="sd"],
+.blog-label input:focus~label[for="seo"],
+.blog-label input:focus~label[for="seod"] {
     font-size: 0.8rem;
     top: 5px;
     color: var(--primary);
@@ -1759,6 +1792,92 @@ label[for="e1"] {
 
 .blog-edit-a>div a:not(.blog-edit-a>div a:last-child) {
     margin-right: 20px;
+}
+
+.blog-edit-r1 {
+    display: grid;
+    grid-template-columns: auto 60%;
+    padding: 30px 20px;
+    border-radius: 20px;
+    align-items: start;
+    margin-bottom: 25px;
+    background-color: var(--background-color);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 5px 22px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.5px;
+}
+
+.blog-edit-r1 h6 {
+    font-size: 1.0625rem;
+    margin: 0;
+    font-weight: bolder;
+}
+
+#pt,
+#seo {
+    margin-bottom: 25px;
+}
+
+.blog-edit-r1 button {
+    background-color: var(--background-color);
+    border: none;
+    padding: 30px 0;
+    cursor: pointer;
+    color: var(--black);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+
+#blog-edit-file {
+    display: none;
+}
+
+label[for="blog-edit-file"] {
+    display: block;
+    /* margin-bottom: 20px; */
+    padding: 48px;
+    display: flex;
+    color: var(--black);
+    justify-content: center;
+    align-items: start;
+    border: 1px dashed var(--dashed-color);
+    border-radius: 8px;
+}
+
+label[for="blog-edit-file"]:hover {
+    opacity: 0.5;
+    background-color: rgba(17, 25, 39, 0.04);
+}
+
+label[for="blog-edit-file"]>div:first-child {
+    padding: 20px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: rgb(229 231 235);
+}
+
+label[for="blog-edit-file"] span {
+    text-decoration: underline;
+}
+
+label[for="blog-edit-file"] h5 {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+label[for="blog-edit-file"] p {
+    color: var(--gray);
+    font-size: 0.875rem;
+}
+
+.blog-edit-r1 #blog-edit-photo {
+    /* background-image: url(../images/blog-edit.webp); */
+    background-position: center;
+    background-size: cover;
+    margin: 24px 0;
+    height: 230px;
+    border-radius: 8px;
+    border: 1px dashed var(--dashed-color);
 }
 
 /* **********************blog-edit-end-************************8 */
@@ -2237,9 +2356,9 @@ label[for=aone],
     cursor: pointer;
 }
 
-input[type=radio] {
+/* input[type=radio] {
     display: none;
-}
+} */
 
 #atwo:checked~.f-page {
     display: block;
