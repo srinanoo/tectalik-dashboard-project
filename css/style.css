@@ -107,7 +107,7 @@ a {
     position: fixed;
     right: 0;
     top: 0;
-    width: 30%;
+    width: 28%;
     height: 100%;
     color: var(--black);
     background-color: var(--nav-color);
@@ -172,8 +172,8 @@ a {
     margin: 15px 0;
 }
 
-.settings-block-color>div,
-.settings-block-theme>div {
+.settings-block-color>div label,
+.settings-block-theme>div label {
     background-color: var(--program);
     border-radius: 10px;
     padding: 5px;
@@ -1819,7 +1819,8 @@ label[for="seod"] {
 .blog-edit-r1 button {
     background-color: var(--background-color);
     border: none;
-    padding: 30px 0;
+    margin: 10px 0;
+    padding: 15px 0;
     cursor: pointer;
     color: var(--black);
     font-weight: 600;
@@ -1876,6 +1877,7 @@ label[for="blog-edit-file"] p {
     background-size: cover;
     margin: 24px 0;
     height: 230px;
+    overflow: hidden;
     border-radius: 8px;
     border: 1px dashed var(--dashed-color);
 }
