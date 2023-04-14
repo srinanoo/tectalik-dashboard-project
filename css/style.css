@@ -452,7 +452,6 @@ label[for="filter"]:hover {
     background-color: white;
 }
 
-
 .c-container {
     width: 95%;
     margin: auto;
@@ -531,25 +530,71 @@ label[for="filter"]:hover {
     display: flex;
     flex-wrap: wrap;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 5px 22px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.5px;
-    padding: 20px 0px;
+    padding: 20px;
     align-items: center;
 }
 
-
-.c-row2>div a {
-    margin-left: 25px;
+.c-list-row2 input[type="radio"] {
+    display: none;
 }
 
-.c-row2>div a {
-    text-decoration: none;
-    padding: 10px 0px;
+.c-list-row2 .c-nav,
+.c-lab {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.c-list-row2>.c-nav>label,
+.c-lab>label {
+    display: block;
     color: rgb(108, 115, 127);
+    font-size: 17px;
+    font-weight: 500;
+    padding: 12px 24px 12px 0px;
+    cursor: pointer;
 }
 
-.c-row2>div a:hover {
-    text-decoration: underline rgb(99, 102, 241) 2px;
-    color: rgb(99, 102, 241);
+.c-list-row2>.c-nav .slider {
+    position: absolute;
+    height: 100%;
+    top: 20px;
+    width: 6%;
+    bottom: 0;
+    border-bottom: 2px solid rgb(41, 112, 255);
+    transition: all 0.3s ease;
+}
 
+#All:checked~.c-nav>label[for="All"],
+#AcceptsMarketing:checked~.c-nav>label[for="AcceptsMarketing"],
+#Prospect:checked~.c-nav>label[for="Prospect"],
+#Returning:checked~.c-nav>label[for="Returning"],
+#cdetails:checked~.c-lab>label[for="cdetails"],
+#cinvoices:checked~.c-lab>label[for="cinvoices"],
+#clogs:checked~.c-lab>label[for="clogs"] {
+    color: rgb(41, 112, 255);
+}
+
+#All:checked~.c-nav .slider {
+    left: -1px;
+    top: 20px;
+}
+
+#AcceptsMarketing:checked~.c-nav .slider {
+    left: 38px;
+    width: 35%;
+}
+
+#Prospect:checked~.c-nav .slider {
+    left: 204px;
+    width: 18%;
+}
+
+#Returning:checked~.c-nav .slider {
+    left: 300px;
+    width: 19%;
 }
 
 .c-row3 {
@@ -585,7 +630,9 @@ label[for="filter"]:hover {
 }
 
 #search:focus,
-#val:focus {
+#val:focus,
+input#cedit:focus,
+input#cedit1:focus {
     outline: 5px solid rgb(99, 102, 241);
     border-radius: 8px;
     border: 0;
@@ -599,11 +646,11 @@ label[for="filter"]:hover {
 }
 
 #val:focus~[for="val"] {
-    color: blue
+    color: rgb(99, 102, 241)
 }
 
 select#val {
-    padding: 15px;
+    padding: 24px 15px 15px 15px;
     border: solid 1px lightgray;
     border-radius: 5px;
     font-weight: 500;
@@ -617,7 +664,8 @@ select#val {
     color: rgb(108, 115, 127);
 }
 
-.c-c5 label:focus {
+.c-c5 label:focus,
+.c-gridedit>div label:focus {
     text-decoration: underline rgb(99, 102, 241);
 }
 
@@ -874,14 +922,54 @@ input#aone {
     left: 5px;
 }
 
-.c-three {
+.c-content .c-main-box {
     display: flex;
     width: 30%;
     justify-content: space-between;
     margin-top: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     margin-left: 0px;
     cursor: pointer;
+}
+
+.c-content {
+    display: none;
+}
+
+#cdetails:checked~.tab>.c-content .c-main-box {
+    display: flex;
+}
+
+#cinvoices:checked~.tab>.c-content .c-invoices {
+    display: grid;
+}
+
+.c-lab .c-navl {
+    position: absolute;
+    width: 2%;
+    border: 0;
+    transition: all 0.3s ease;
+    height: 100%;
+    border-bottom: 3px solid rgb(41, 112, 255);
+}
+
+#cdetails:checked~.c-lab .c-navl {
+    left: 0%;
+    width: 5%;
+}
+
+#cinvoices:checked~.c-lab .c-navl {
+    width: 6%;
+    left: 6%;
+}
+
+#clogs:checked~.c-lab .c-navl {
+    width: 3%;
+    left: 14%;
+}
+
+.c-lab label {
+    margin-bottom: 20px;
 }
 
 .c-container hr {
@@ -1009,7 +1097,8 @@ input#aone {
 }
 
 input#cbox,
-input#cinvoice {
+input#cinvoice,
+input#cinvoice1 {
     display: none;
 }
 
@@ -1038,9 +1127,9 @@ input#cinvoice {
     line-height: 1;
     letter-spacing: 0.5px;
     color: rgb(47, 55, 70);
+    padding: 15px;
 }
 
-.c-invrow2>div:not(:last-child);
 
 .c-invrow3>div:not(:last-child) {
     padding: 15px;
@@ -1075,17 +1164,26 @@ input#cinvoice {
     padding: 8px;
 }
 
-.c-invoices {
-    display: none;
+.c-gridedit {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+    margin: 25px;
 }
 
-#cinvoice:checked~.c-invoices {
-    display: block;
+.c-gridedit>div {
+    position: relative;
 }
 
-#cinvoice:checked~.c-main-box {
-    display: none;
+.c-gridedit>div label {
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(108, 115, 127);
 }
+
 
 .blog-box {
     width: 96%;

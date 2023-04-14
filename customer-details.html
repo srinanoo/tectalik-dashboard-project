@@ -45,7 +45,7 @@
                 </div>
                 <div class="c-user3">
                     <div class="c-edit">
-                        <a href="">Edit</a>
+                        <a href="customer-edit.html">Edit</a>
                         <img src="images/edit.png" alt=""></img>
                     </div>
                     <div class="c-action">
@@ -53,249 +53,244 @@
                     </div>
                 </div>
             </div>
-            <div class="c-three">
-                <div>
-                    Details
-                </div>
-                <label for="cinvoice">
-                    <div>
-                        Invoices
-                    </div>
-                </label>
-                <div>Logs</div>
+            <input type="radio" id="cdetails" name="cnavl" checked>
+            <input type="radio" id="cinvoices" name="cnavl">
+            <input type="radio" id="clogs" name="cnavl">
+            <div class="c-lab">
+                <label for="cdetails">Details</label>
+                <label for="cinvoices">Invoices</label>
+                <label for="clogs">Logs</label>
+                <div class="c-navl"></div>
             </div>
             <hr>
-            <input type="checkbox" name="inv" id="cinvoice"></input>
-            <div class="c-main-box">
-                <div class="c-box-shadow1">
-                    <div class="c-box1">
-                        <h3>Basic Details</h3>
-                        <h4>Email</h4>
-                        <p>miron.vitold@devias.io</p>
-                    </div>
-                    <hr>
-                    <div class="c-box1">
-                        <h4>Phone</h4>
-                        <p>+55 748 327 439</p>
-                    </div>
-                    <hr>
-                    <div class="c-box1">
-                        <h4>Country</h4>
-                        <p>USA</p>
-                    </div>
-                    <hr>
-                    <div class="c-box1">
-                        <h4>State/Region</h4>
-                        <p>New York</p>
-                    </div>
-                    <hr>
-                    <div class="c-box1">
-                        <h4>Address 1</h4>
-                        <p>New York</p>
-                    </div>
-                    <hr>
-                    <div class="c-box1">
-                        <h4>Address 2</h4>
-                        <p>House #25</p>
-                    </div>
-                    <hr>
-                    <div class="c-box1">
-                        <h3>Reset Password</h3>
-                    </div>
-                </div>
-                <div>
+            <div class="tab">
+                <div class="c-content c-main-box">
                     <div class="c-box-shadow1">
                         <div class="c-box1">
-                            <h3>Payment</h3>
-                            <h4>Credit Card</h4>
-                            <p>**** **** **** 4142</p>
+                            <h3>Basic Details</h3>
+                            <h4>Email</h4>
+                            <p>miron.vitold@devias.io</p>
                         </div>
                         <hr>
                         <div class="c-box1">
-                            <h4>Paid</h4>
-                            <p>2 ($50.00)</p>
+                            <h4>Phone</h4>
+                            <p>+55 748 327 439</p>
                         </div>
                         <hr>
                         <div class="c-box1">
-                            <h4>Draft</h4>
-                            <p>1 ($5.00)</p>
+                            <h4>Country</h4>
+                            <p>USA</p>
                         </div>
                         <hr>
                         <div class="c-box1">
                             <h4>State/Region</h4>
-                            <p>2 ($50.00)</p>
+                            <p>New York</p>
                         </div>
                         <hr>
                         <div class="c-box1">
-                            <h4>Unpaid/Due</h4>
-                            <p>1 ($12.00)</p>
+                            <h4>Address 1</h4>
+                            <p>New York</p>
                         </div>
                         <hr>
                         <div class="c-box1">
-                            <h4>Refunded</h4>
-                            <p>0 ($0.00)</p>
+                            <h4>Address 2</h4>
+                            <p>House #25</p>
                         </div>
                         <hr>
                         <div class="c-box1">
-                            <h4>Gross Income</h4>
-                            <p>$1,200.00</p>
-                        </div>
-                        <hr>
-                        <div class="c-box2">
-                            <div>
-                                Create Invoice
-                            </div>
-                            <div>
-                                Resend Due Invoice
-                            </div>
+                            <h3>Reset Password</h3>
                         </div>
                     </div>
-                    <div class="c-box-shadow1">
-                        <div class="c-box1">
-                            <h3>Email</h3>
-                            <select name="invo" id="val">
-                                <option value="">Resend Last Invoice</option>
-                                <option value="">Send Password reset</option>
-                                <option value="">Send verification</option>
-                            </select>
-                            <div class="c-email">
-                                <button>Send email <img src="images/right-arr.png" alt=""></img> </button>
-                            </div>
-                            <div class="c-ethree">
-                                <div>
-                                    <h4>Mail type</h4>
-                                </div>
-                                <div>
-                                    <h4>Date</h4>
-                                </div>
+                    <div>
+                        <div class="c-box-shadow1">
+                            <div class="c-box1">
+                                <h3>Payment</h3>
+                                <h4>Credit Card</h4>
+                                <p>**** **** **** 4142</p>
                             </div>
                             <hr>
-                            <div class="c-ethree">
-                                <div>
-                                    <p>Order Confimation</p>
-                                </div>
-                                <div>
-                                    <p>Order Confimation</p>
-                                </div>
+                            <div class="c-box1">
+                                <h4>Paid</h4>
+                                <p>2 ($50.00)</p>
                             </div>
                             <hr>
-                            <div class="c-ethree">
+                            <div class="c-box1">
+                                <h4>Draft</h4>
+                                <p>1 ($5.00)</p>
+                            </div>
+                            <hr>
+                            <div class="c-box1">
+                                <h4>State/Region</h4>
+                                <p>2 ($50.00)</p>
+                            </div>
+                            <hr>
+                            <div class="c-box1">
+                                <h4>Unpaid/Due</h4>
+                                <p>1 ($12.00)</p>
+                            </div>
+                            <hr>
+                            <div class="c-box1">
+                                <h4>Refunded</h4>
+                                <p>0 ($0.00)</p>
+                            </div>
+                            <hr>
+                            <div class="c-box1">
+                                <h4>Gross Income</h4>
+                                <p>$1,200.00</p>
+                            </div>
+                            <hr>
+                            <div class="c-box2">
                                 <div>
-                                    <p>07/04/2023 | 04:25</p>
+                                    Create Invoice
                                 </div>
                                 <div>
-                                    <p>05/04/2023 | 22:10</p>
+                                    Resend Due Invoice
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="c-box-shadow1">
-                        <div class="c-box1">
-                            <h3>Data Management</h3>
-                            <div class="c-box3">
-                                <div>
-                                    Delete Account
+                        <div class="c-box-shadow1">
+                            <div class="c-box1">
+                                <h3>Email</h3>
+                                <select name="invo" id="val">
+                                    <option value="">Resend Last Invoice</option>
+                                    <option value="">Send Password reset</option>
+                                    <option value="">Send verification</option>
+                                </select>
+                                <div class="c-email">
+                                    <button>Send email <img src="images/right-arr.png" alt=""></img> </button>
+                                </div>
+                                <div class="c-ethree">
+                                    <div>
+                                        <h4>Mail type</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Date</h4>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="c-ethree">
+                                    <div>
+                                        <p>Order Confimation</p>
+                                    </div>
+                                    <div>
+                                        <p>Order Confimation</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="c-ethree">
+                                    <div>
+                                        <p>07/04/2023 | 04:25</p>
+                                    </div>
+                                    <div>
+                                        <p>05/04/2023 | 22:10</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="c-p">
-                                Remove this customer’s chart if he requested that, if not please be aware that what has
-                                been deleted can never brought back
+                        </div>
+                        <div class="c-box-shadow1">
+                            <div class="c-box1">
+                                <h3>Data Management</h3>
+                                <div class="c-box3">
+                                    <div>
+                                        Delete Account
+                                    </div>
+                                </div>
+                                <div class="c-p">
+                                    Remove this customer’s chart if he requested that, if not please be aware that what
+                                    has
+                                    been deleted can never brought back
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <input type="checkbox" name="inv" id="cinvoice"></input>
-            <div class="c-invoices">
-                <div class="c-box-shadow1">
-                    <div class="c-inv">
-                        <h3>Recent Invoices</h3>
-                        <div>
-                            <label for="cbox">
-                                <img src="images/more.png" alt=""></img>
-                            </label>
+                <div class="c-content c-invoices">
+                    <div class="c-box-shadow1">
+                        <div class="c-inv">
+                            <h3>Recent Invoices</h3>
+                            <div>
+                                <label for="cbox">
+                                    <img src="images/more.png" alt=""></img>
+                                </label>
 
-                            <input type="checkbox" name="box" id="cbox"></input>
-                            <div class="c-smbox">
-                                <div>
-                                    <img src="images/import-file.png" alt=""></img> Import
-                                </div>
-                                <div>
-                                    <img src="images/file.png" alt=""></img> Export
-                                </div>
-                                <div>
-                                    <img src="images/copy-two-paper-sheets-interface-symbol.png" alt=""></img> Copy
-                                </div>
-                                <div>
-                                    <img src="images/archive.png" alt=""></img> Archive
+                                <input type="checkbox" name="box" id="cbox"></input>
+                                <div class="c-smbox">
+                                    <div>
+                                        <img src="images/import-file.png" alt=""></img> Import
+                                    </div>
+                                    <div>
+                                        <img src="images/file.png" alt=""></img> Export
+                                    </div>
+                                    <div>
+                                        <img src="images/copy-two-paper-sheets-interface-symbol.png" alt=""></img> Copy
+                                    </div>
+                                    <div>
+                                        <img src="images/archive.png" alt=""></img> Archive
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="c-invrow2">
-                        <div>ID</div>
-                        <div>DATE</div>
-                        <div>TOTAL</div>
-                        <div>SPENT</div>
-                        <div>ACTION</div>
-                    </div>
-                    <hr>
-                    <div class="c-invrow3">
-                        <div>#528651571NT</div>
-                        <div>Apr 11,2023</div>
-                        <div>1358.75</div>
-                        <div class="c-paid">
-                            <div>PAID</div>
+                        <div class="c-invrow2">
+                            <div>ID</div>
+                            <div>DATE</div>
+                            <div>TOTAL</div>
+                            <div>SPENT</div>
+                            <div>ACTION</div>
                         </div>
-                        <div>
-                            <a href="">
-                                <img src="images/right-arrow.png" alt=""></img>
-                            </a>
+                        <hr>
+                        <div class="c-invrow3">
+                            <div>#528651571NT</div>
+                            <div>Apr 11,2023</div>
+                            <div>1358.75</div>
+                            <div class="c-paid">
+                                <div>PAID</div>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <img src="images/right-arrow.png" alt=""></img>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="c-invrow3">
-                        <div>#528651571NT</div>
-                        <div>Apr 11,2023</div>
-                        <div>1451.75</div>
-                        <div class="c-unpaid">
-                            <div>UNPAID</div>
+                        <div class="c-invrow3">
+                            <div>#528651571NT</div>
+                            <div>Apr 11,2023</div>
+                            <div>1451.75</div>
+                            <div class="c-unpaid">
+                                <div>UNPAID</div>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <img src="images/right-arrow.png" alt=""></img>
+                                </a>
+                            </div>
                         </div>
-                        <div>
-                            <a href="">
-                                <img src="images/right-arrow.png" alt=""></img>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="c-bottom">
-                        <div class="c-row">
-                            <p>Rows Per Head:</p>
-                        </div>
-                        <div>
-                            <select name="num" id="num">
-                                <option value="5">5</option>
-                                <option value="10">10</option>
-                                <option value="15">15</option>
-                            </select>
-                        </div>
-                        <div class="c-num">
-                            1-2 of 2
-                        </div>
-                        <div class="c-arrow">
-                            <label for="">
-                                <img src="images/left.png" alt=""></img>
-                            </label>
-                            <label for="">
-                                <img src="images/next.png" alt=""></img>
-                            </label>
+                        <div class="c-bottom">
+                            <div class="c-row">
+                                <p>Rows Per Head:</p>
+                            </div>
+                            <div>
+                                <select name="num" id="num">
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                </select>
+                            </div>
+                            <div class="c-num">
+                                1-2 of 2
+                            </div>
+                            <div class="c-arrow">
+                                <label for="">
+                                    <img src="images/left.png" alt=""></img>
+                                </label>
+                                <label for="">
+                                    <img src="images/next.png" alt=""></img>
+                                </label>
+                            </div>
                         </div>
                     </div>
 
-
-
+                    <div class=" c-content c-logs"></div>
 
                 </div>
-
             </div>
-        </div>
-    </div>
 </body>
