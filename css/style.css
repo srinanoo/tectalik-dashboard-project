@@ -1163,7 +1163,6 @@ input#cinvoice1 {
     color: rgb(180, 35, 24);
     padding: 8px;
 }
-
 .c-gridedit {
     display: grid;
     grid-template-columns: 48% 48%;
@@ -1183,7 +1182,6 @@ input#cinvoice1 {
     font-weight: 500;
     color: rgb(108, 115, 127);
 }
-
 
 .blog-box {
     width: 96%;
