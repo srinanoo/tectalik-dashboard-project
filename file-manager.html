@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
-        rel="stylesheet">
+        rel="stylesheet">    
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-    <div class="f_header">
+    <div class="main">
         <div class="f_container sticky_row">
             <div>
                 <img src="images/search-interface-symbol.png" alt="">
@@ -31,7 +31,6 @@
                 <img src="images/notification-bell.png" alt="">
             </div>
         </div>
-
         <!-- ........From here file manager starts........ -->
         <div class="f_container f_row1">
             <div>
@@ -57,635 +56,949 @@
                 </div>
             </div>
         </div>
-        <div class="f_container f_row2">
-            <div class="f_grid_col">
-                <div class="input_col">
-                    <img src="images/search-interface-symbol.png">
-                    <input type="search" name="searching" id="searching" placeholder="Search">
-                </div>
-                <div>
-                    <button><img src="images/menu.png" alt=""></button>
-                    <button><img src="images/list_blk.png" alt=""></button>
-                </div>
-                <div class="sort">
-                    <img src="images/down-filled-triangular-arrow.png" alt="">
-                    <select id="version" name="version">
-                        <option value="oldest">Latest</option>
-                        <option value="newest">Oldest</option>
-                    </select>
-                    <label for="version">Sort by</label>
-                </div>
-            </div>
-            <div class="f_article">
-                <h3>Storage</h3>
-                <p>Upgrade before reaching it</p>
-                piechart
-                <h3>You've almost reached your limit</h3>
-                <p>You have used 75% of your available storage.</p>
-                <div class="f_store_col">
-                    <div>
-                        <img src="images/icon-mp4.svg" alt="">
-                        <img src="images/icon-png.svg" alt="">
-                        <img src="images/icon-pdf.svg" alt="">
-                        <img src="images/icon-other.svg" alt="">
+        <div class="f_fmain f_container ">
+            <div>
+                <div class="f_grid_col">
+                    <div class="input_col">
+                        <img src="images/search-interface-symbol.png">
+                        <input type="search" name="searching" id="searching" placeholder="Search">
                     </div>
                     <div>
-                        hi
+                        <button><img src="images/menu.png" alt=""></button>
+                        <button><img src="images/list_blk.png" alt=""></button>
+                    </div>
+                    <div class="sort">
+                        <img src="images/down-filled-triangular-arrow.png" alt="">
+                        <select id="version" name="version">
+                            <option value="oldest">Latest</option>
+                            <option value="newest">Oldest</option>
+                        </select>
+                        <label for="version">Sort by</label>
                     </div>
                 </div>
-            </div>
-        </div>
-        <input type="radio" name="rad" id="atwo">
-        <div class="f_sm_container">
-            <div class="f_row3">
-                <div class="f_card_row1">
-                    <!-- row1_col1 -->
-                    <div class="f_sm_card1">
-                        <div>
-                            <img src="images/star.png" alt="">
-                        </div>
-                        <div>
-                            <img src="images/dots.png" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <img src="images/icon-folder.svg" alt="">
-                        <h3>AWS Credentials</h3>
-                        <hr class="f_hrline">
-                    </div>
-                    <div class="f_sm_card">
-                        <div>
-                            <p>503.9MB 12 items</p>
-                        </div>
-                        <div>
-                            <img style="position:relative;left:20px" src="images/avatar-anika-visser.png" alt="">
-                            <img src="images/avatar-miron-vitold.png" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <p>Credited at Apr 07,2023</p>
-                    </div>
-                </div>
-                <!-- row1_col2 -->
-                <div>
-                    <div class="f_card_row1">
-                        <div class="f_sm_card1">
-                            <div>
-                                <img src="images/star.png" alt="">
-                            </div>
-                            <div>
-                                <img src="images/dots.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <img src="images/icon-folder.svg" alt="">
-                            <h3>dev 2022</h3>
-                            <hr class="f_hrline">
-                        </div>
-                        <div class="f_sm_card">
-                            <div>
-                                <p>495.04MB 5 items</p>
-                            </div>
-                            <div>
-                                <div class="f_world">
-
+                <input type="radio" name="rad" id="fone">
+                <input type="radio" name="rad" id="ftwo">
+                <input type="radio" name="rad" id="fthree">
+                <div class="f_sm_container">
+                    <div class="f_row3">
+                        <!-- row1_col1 -->
+                        <div class="f_card_row1">
+                            <div class="f_sm_card1">
+                                <div class="f_imghover">
+                                    <input type="checkbox" name="f-check" id="f-check">
+                                    <label for="f-check"><img src="images/star.png" alt=""></label>
+                                    <label for="f-check" class="f_orange"><img src="images/staryellow.png" alt=""></label>
                                 </div>
-                                <img src="images/world.png" alt="">
+                                <div>
+                                    <img src="images/dots.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/icon-folder.svg" alt="">
+                                <h3>AWS Credentials</h3>
+                                <hr class="f_hrline">
+                            </div>
+                            <div class="f_sm_card">
+                                <div>
+                                    <p>503.9MB 12 items</p>
+                                </div>
+                                <div>
+                                    <img style="position:relative;left:20px" src="images/avatar-anika-visser.png"
+                                        alt="">
+                                    <img src="images/avatar-miron-vitold.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <p>Credited at Apr 07,2023</p>
                             </div>
                         </div>
+                        <!-- row1_col2 -->
                         <div>
-                            <p>Credited at Apr 07,2023</p>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check1">
+                                        <label for="f-check1"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check1" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-folder.svg" alt="">
+                                    <h3>dev 2022</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>495.04MB 5 items</p>
+                                    </div>
+                                    <div>
+                                        <div class="f_world">
+
+                                        </div>
+                                        <img src="images/world.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 07,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row1_col3 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check2">
+                                        <label for="f-check2"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check2" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-folder.svg" alt="">
+                                    <h3>AI Resources</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>185.22MB 3 items</p>
+                                    </div>
+                                    <div style="position: relative;">
+                                        <img style="position:absolute;right:20px" src="images/avatar-miron-vitold.png"
+                                            alt="">
+                                        <img src="images/avatar-alcides-antonio.png" alt="">
+                                        <img style="position:absolute;right:44px" src="images/avatar-nasimiyu-danai.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 07,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row2_col1 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check4">
+                                        <label for="f-check4"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check4" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-folder.svg" alt="">
+                                    <h3>Invoices</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div style="padding: 13px 0px">
+                                        <p>503.9MB 12 items</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 06,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row2_col2 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check5">
+                                        <label for="f-check5"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check5" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-folder.svg" alt="">
+                                    <h3>assets</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>99.07MB 12 items</p>
+                                    </div>
+                                    <div>
+                                        <img style="position:relative;left:20px" src="images/avatar-anika-visser.png"
+                                            alt="">
+                                        <img src="images/avatar-miron-vitold.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 07,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row2_col3 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check6">
+                                        <label for="f-check6"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check6" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-pdf.svg" alt="">
+                                    <h3>Pesonal-cv.pdf</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>450.38MB 12 items</p>
+                                    </div>
+                                    <div>
+                                        <img src="images/avatar-alcides-antonio.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 05,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row3_col1 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check7">
+                                        <label for="f-check7"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check7" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-svg.svg" alt="">
+                                    <h3>Company-logo-white.svg</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>726.84MB 12 items</p>
+                                    </div>
+                                    <div>
+                                        <img style="position:relative;left:20px" src="images/avatar-anika-visser.png"
+                                            alt="">
+                                        <img src="images/avatar-nasimiyu-danai.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 05,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row3_col2 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check8">
+                                        <label for="f-check8"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check8" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-jpg.svg" alt="">
+                                    <h3>landing-cover1.jpeg</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>712.23MB 12 items</p>
+                                    </div>
+                                    <div>
+                                        <img src="images/avatar-iulia-albu.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 05,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row3_col3 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check9">
+                                        <label for="f-check9"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check9" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-svg.svg" alt="">
+                                    <h3>About-Hero_shape-xl.svg</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>357.06MB 12 items</p>
+                                    </div>
+                                    <div>
+                                        <img style="position:relative;left:20px" src="images/avatar-nasimiyu-danai.png"
+                                            alt="">
+                                        <img src="images/avatar-iulia-albu.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 05,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f-bottom">
+                        <div class="f-row">
+                            <p>Rows Per Head:</p>
+                        </div>
+                        <div>
+                            <select name="num" id="num">
+                                <option value="5">9</option>
+                                <option value="10">18</option>
+                            </select>
+                        </div>
+                        <div class="f-num">
+                            1-18 of 25
+                        </div>
+                        <div class="f-arrow">
+                            <label for="fone">
+                                <img src="images/left-arrow.png" alt="one"></img>
+                            </label>
+                            <label for="ftwo">
+                                <img src="images/right-arrowmark.png" alt="two"></img>
+                            </label>
                         </div>
                     </div>
                 </div>
-                <!-- row1_col3 -->
-                <div>
-                    <div class="f_card_row1">
-                        <div class="f_sm_card1">
-                            <div>
-                                <img src="images/star.png" alt="">
+                <!-- second-->
+
+                <div class="f-page">
+                    <div class="f_row3">
+                        <div class="f_card_row1">
+                            <!-- row1_col1 -->
+                            <div class="f_sm_card1">
+                                <div class="f_imghover">
+                                    <input type="checkbox" name="f-check" id="f-check-0">
+                                    <label for="f-check-0"><img src="images/star.png" alt=""></label>
+                                    <label for="f-check-0" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                </div>
+                                <div>
+                                    <img src="images/dots.png" alt="">
+                                </div>
                             </div>
                             <div>
-                                <img src="images/dots.png" alt="">
+                                <img src="images/icon-other.svg" alt="">
+                                <h3>api-out.log</h3>
+                                <hr class="f_hrline">
                             </div>
+                            <div class="f_sm_card">
+                                <div>
+                                    <p>52.23 MB</p>
+                                </div>
+                                <div>
+                                    <img style="position:relative;left:20px" src="images/avatar-anika-visser.png"
+                                        alt="">
+                                    <img src="images/avatar-miron-vitold.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <p>Credited at Apr 08,2023</p>
+                            </div>
+                        </div>
+                        <!-- row1_col2 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check-1">
+                                        <label for="f-check-1"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check-1" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-other.svg" alt="">
+                                    <h3>invester_optical_tactics.ico</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>643.04MB</p>
+                                    </div>
+                                    <div>
+                                        <div class="f_world">
+
+                                        </div>
+                                        <img src="images/avatar-carson-darrin.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 08,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row1_col3 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check-2">
+                                        <label for="f-check-2"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check-2" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-other.svg" alt="">
+                                    <h3>rustic_driver_Pike.dmg</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>201.88 MB</p>
+                                    </div>
+                                    <div style="position: relative;">
+                                        <img style="position:absolute;right:20px"
+                                            src="images/avatar-siegbert-gottfried.png" alt="">
+                                        <img src="images/avatar-carson-darrin.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 08,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row2_col1 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check-3">
+                                        <label for="f-check-3"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check-3" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-other.svg" alt="">
+                                    <h3>strategist-auto_royce.7z</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div style="padding: 13px 0px">
+                                        <p>885.25MB </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 01,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row2_col2 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check-4">
+                                        <label for="f-check-4"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check-4" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-other.svg" alt="">
+                                    <h3>Graphic Driver 1.11.msl</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>415.88 MB </p>
+                                    </div>
+                                    <div>
+                                        <img src="images/world.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 01,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row2_col3 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check-5">
+                                        <label for="f-check-5"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check-5" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-svg.svg" alt="">
+                                    <h3>Icon-arrow-right.svg</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>613 KB</p>
+                                    </div>
+                                    <div>
+                                        <img src="images/world.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 05,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row3_col1 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check-6">
+                                        <label for="f-check-6"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check-6" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-other.svg" alt="">
+                                    <h3>animation-ai-model.py</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>885.25 MB </p>
+                                    </div>
+                                    <div>
+                                        <img src="images/avatar-anika-visser.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 01,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row3_col2 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check-7">
+                                        <label for="f-check-7"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check-7" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-png.svg" alt="">
+                                    <h3>hybrid_vw-2023.png</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>712.23 MB</p>
+                                    </div>
+                                    <div>
+                                        <img src="images/avatar-anika-visser.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 01,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row3_col3 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check-8">
+                                        <label for="f-check-8"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check-8" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-png.svg" alt="">
+                                    <h3>disel_electric.png</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>357.06 MB</p>
+                                    </div>
+                                    <div>
+                                        <img src="images/world.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 05,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f-bottom">
+                        <div class="f-row">
+                            <p>Rows Per Head:</p>
                         </div>
                         <div>
-                            <img src="images/icon-folder.svg" alt="">
-                            <h3>AI Resources</h3>
-                            <hr class="f_hrline">
+                            <select name="num" id="num">
+                                <option value="5">9</option>
+                                <option value="10">18</option>
+                            </select>
                         </div>
-                        <div class="f_sm_card">
-                            <div>
-                                <p>185.22MB 3 items</p>
-                            </div>
-                            <div style="position: relative;">
-                                <img style="position:absolute;right:20px" src="images/avatar-miron-vitold.png" alt="">
-                                <img src="images/avatar-alcides-antonio.png" alt="">
-                                <img style="position:absolute;right:44px" src="images/avatar-nasimiyu-danai.png" alt="">
-                            </div>
+                        <div class="f-num">
+                            10-18 of 25
                         </div>
-                        <div>
-                            <p>Credited at Apr 07,2023</p>
+                        <div class="f-arrow">
+                            <label for="fone">
+                                <img src="images/left-arrow.png" alt="one"></img>
+                            </label>
+                            <label for="fthree">
+                                <img src="images/right-arrowmark.png" alt="two"></img>
+                            </label>
                         </div>
                     </div>
                 </div>
-                <!-- row2_col1 -->
-                <div>
-                    <div class="f_card_row1">
-                        <div class="f_sm_card1">
-                            <div>
-                                <img src="images/star.png" alt="">
+                <!-- third -->
+
+                <div class="f_third-page">
+                    <div class="f_row3">
+                        <div class="f_card_row1">
+                            <!-- row1_col1 -->
+                            <div class="f_sm_card1">
+                                <div class="f_imghover">
+                                    <input type="checkbox" name="f-check" id="f-check01">
+                                    <label for="f-check01"><img src="images/star.png" alt=""></label>
+                                    <label for="f-check01" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                </div>
+                                <div>
+                                    <img src="images/dots.png" alt="">
+                                </div>
                             </div>
                             <div>
-                                <img src="images/dots.png" alt="">
+                                <img src="images/icon-mp4.svg" alt="">
+                                <h3>christmas carols.mp4</h3>
+                                <hr class="f_hrline">
+                            </div>
+                            <div class="f_sm_card">
+                                <div>
+                                    <p>802.17 MB</p>
+                                </div>
+                                <div>
+                                    <img src="images/avatar-anika-visser.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <p>Credited at Mar 26,2023</p>
                             </div>
                         </div>
+                        <!-- row1_col2 -->
                         <div>
-                            <img src="images/icon-folder.svg" alt="">
-                            <h3>Invoices</h3>
-                            <hr class="f_hrline">
-                        </div>
-                        <div class="f_sm_card">
-                            <div style="padding: 13px 0px">
-                                <p>503.9MB 12 items</p>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check02">
+                                        <label for="f-check02"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check02" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-other.svg" alt="">
+                                    <h3>Bandwidth_traffic-analyzer.dmg</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>246.64 MB</p>
+                                    </div>
+                                    <div>
+                                        <div class="f_world">
+
+                                        </div>
+                                        <img src="images/avatar-anika-visser.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Mar 24,2023</p>
+                                </div>
                             </div>
                         </div>
+                        <!-- row1_col3 -->
+                        <div class="f_card_row1">
+                            <div class="f_sm_card1">
+                                <div class="f_imghover">                                    <input type="checkbox" name="f-check" id="f-check03">
+                                    <label for="f-check03"><img src="images/star.png" alt=""></label>
+                                    <label for="f-check03" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                </div>
+                                <div>
+                                    <img src="images/dots.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/icon-mp4.svg" alt="">
+                                <h3>devias-kit.fig</h3>
+                                <hr class="f_hrline">
+                            </div>
+                            <div class="f_sm_card">
+                                <div>
+                                    <p>503.76 MB</p>
+                                </div>
+                                <div>
+                                    <img src="images/avatar-neha-punita.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <p>Credited at Mar 24,2023</p>
+                            </div>
+                        </div>
+                        <!-- row2_col1 -->
                         <div>
-                            <p>Credited at Apr 06,2023</p>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check04">
+                                        <label for="f-check04"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check04" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-other.svg" alt="">
+                                    <h3>not_a_virus.exe</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>572.95 MB</p>
+                                    </div>
+                                    <div style="position: relative;">
+                                        <img style="position:absolute;right:20px" src="images/avatar-neha-punita.png"
+                                            alt="">
+                                        <img src="images/avatar-carson-darrin.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Mar 04,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row2_col2 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check05">
+                                        <label  for="f-check05"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check05" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-other.svg" alt="">
+                                    <h3>website-hero-illustration.psd</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>317.7 MB </p>
+                                    </div>
+                                    <div>
+                                        <img src="images/world.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Mar 01,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row2_col3 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check06">
+                                        <label for="f-check06"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check06" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-svg.svg" alt="">
+                                    <h3>ssl-certs.tar</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>492.56 MB</p>
+                                    </div>
+                                    <div>
+                                        <img src="images/avatar-iulia-albu.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Feb 27,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row3_col1 -->
+                        <div>
+                            <div class="f_card_row1">
+                                <div class="f_sm_card1">
+                                    <div class="f_imghover">
+                                        <input type="checkbox" name="f-check" id="f-check07">
+                                        <label for="f-check07"><img src="images/star.png" alt=""></label>
+                                        <label for="f-check07" class="f_orange"><img src="images/staryellow.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <img src="images/dots.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/icon-other.svg" alt="">
+                                    <h3>animation-ai-model.py</h3>
+                                    <hr class="f_hrline">
+                                </div>
+                                <div class="f_sm_card">
+                                    <div>
+                                        <p>885.25 MB </p>
+                                    </div>
+                                    <div>
+                                        <img src="images/avatar-anika-visser.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Credited at Apr 01,2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f-bottom">
+                        <div class="f-row">
+                            <p>Rows Per Head:</p>
+                        </div>
+                        <div>
+                            <select name="num" id="num">
+                                <option value="5">9</option>
+                                <option value="10">18</option>
+                            </select>
+                        </div>
+                        <div class="f-num">
+                            20 of 25
+                        </div>
+                        <div class="f-arrow">
+                            <label for="ftwo">
+                                <img src="images/left-arrow.png" alt="one"></img>
+                            </label>
+                            <label for="fthree">
+                                <img src="images/right-arrowmark.png" alt="two"></img>
+                            </label>
                         </div>
                     </div>
                 </div>
-                <!-- row2_col2 -->
-                <div>
-                    <div class="f_card_row1">
-                        <div class="f_sm_card1">
-                            <div>
-                                <img src="images/star.png" alt="">
-                            </div>
-                            <div>
-                                <img src="images/dots.png" alt="">
-                            </div>
+            </div>
+            <div>
+                <div class="f_article">
+                    <h3>Storage</h3>
+                    <p>Upgrade before reaching it</p>
+                    <div>
+                        <div class="half-circle">
                         </div>
-                        <div>
-                            <img src="images/icon-folder.svg" alt="">
-                            <h3>assets</h3>
-                            <hr class="f_hrline">
-                        </div>
-                        <div class="f_sm_card">
-                            <div>
-                                <p>99.07MB 12 items</p>
-                            </div>
-                            <div>
-                                <img style="position:relative;left:20px" src="images/avatar-anika-visser.png" alt="">
-                                <img src="images/avatar-miron-vitold.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p>Credited at Apr 07,2023</p>
+                        <div class="gb">
+                            <h2>72 GB</h2>
                         </div>
                     </div>
-                </div>
-                <!-- row2_col3 -->
-                <div>
-                    <div class="f_card_row1">
-                        <div class="f_sm_card1">
-                            <div>
-                                <img src="images/star.png" alt="">
-                            </div>
-                            <div>
-                                <img src="images/dots.png" alt="">
-                            </div>
+                    <h3>You've almost reached your limit</h3>
+                    <p>You have used 75% of your available storage.</p>
+                    <div class="f_four_list">
+                        <div>
+                            <img src="images/icon-mp4.svg" alt="">
+                        </div>
+                        <div>
+                            <h4>MP4</h4>
+                            <p>22.75 GB 25 items</h4>
+                        </div>
+                        <div>
+                            <img src="images/icon-png.svg" alt="">
+                        </div>
+                        <div>
+                            <h4>PNG</h4>
+                            <p>54.69 GB 591 items</p>
                         </div>
                         <div>
                             <img src="images/icon-pdf.svg" alt="">
-                            <h3>Pesonal-cv.pdf</h3>
-                            <hr class="f_hrline">
-                        </div>
-                        <div class="f_sm_card">
-                            <div>
-                                <p>450.38MB 12 items</p>
-                            </div>
-                            <div>
-                                <img src="images/avatar-alcides-antonio.png" alt="">
-                            </div>
                         </div>
                         <div>
-                            <p>Credited at Apr 05,2023</p>
+                            <h4>PDF</h4>
+                            <p>412.39 MB 95 items</p>
+                        </div>
+                        <div>
+                            <img src="images/icon-other.svg" alt="">
+                        </div>
+                        <div>
+                            <h4>Others</h4>
+                            <p>261.43 GB 210 items</p>
                         </div>
                     </div>
-                </div>
-                <!-- row3_col1 -->
-                <div>
-                    <div class="f_card_row1">
-                        <div class="f_sm_card1">
-                            <div>
-                                <img src="images/star.png" alt="">
-                            </div>
-                            <div>
-                                <img src="images/dots.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <img src="images/icon-svg.svg" alt="">
-                            <h3>Company-logo-white.svg</h3>
-                            <hr class="f_hrline">
-                        </div>
-                        <div class="f_sm_card">
-                            <div>
-                                <p>726.84MB 12 items</p>
-                            </div>
-                            <div>
-                                <img style="position:relative;left:20px" src="images/avatar-anika-visser.png" alt="">
-                                <img src="images/avatar-nasimiyu-danai.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p>Credited at Apr 05,2023</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- row3_col2 -->
-                <div>
-                    <div class="f_card_row1">
-                        <div class="f_sm_card1">
-                            <div>
-                                <img src="images/star.png" alt="">
-                            </div>
-                            <div>
-                                <img src="images/dots.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <img src="images/icon-jpg.svg" alt="">
-                            <h3>landing-cover1.jpeg</h3>
-                            <hr class="f_hrline">
-                        </div>
-                        <div class="f_sm_card">
-                            <div>
-                                <p>712.23MB 12 items</p>
-                            </div>
-                            <div>
-                                <img src="images/avatar-iulia-albu.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p>Credited at Apr 05,2023</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- row3_col3 -->
-                <div>
-                    <div class="f_card_row1">
-                        <div class="f_sm_card1">
-                            <div>
-                                <img src="images/star.png" alt="">
-                            </div>
-                            <div>
-                                <img src="images/dots.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <img src="images/icon-svg.svg" alt="">
-                            <h3>About-Hero_shape-xl.svg</h3>
-                            <hr class="f_hrline">
-                        </div>
-                        <div class="f_sm_card">
-                            <div>
-                                <p>357.06MB 12 items</p>
-                            </div>
-                            <div>
-                                <img style="position:relative;left:20px" src="images/avatar-nasimiyu-danai.png" alt="">
-                                <img src="images/avatar-iulia-albu.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p>Credited at Apr 05,2023</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="f-bottom">
-                <div class="f-row">
-                    <p>Rows Per Head:</p>
-                </div>
-                <div>
-                    <select name="num" id="num">
-                        <option value="5">9</option>
-                        <option value="10">18</option>
-                    </select>
-                </div>
-                <div class="f-num">
-                    1-18 of 25
-                </div>
-                <div class="f-arrow">
-                    <label for="aone">
-                        <img src="images/left-arrow.png" alt="one"></img>
-                    </label>
-                    <label for="atwo">
-                        <img src="images/right-arrow.png" alt="two"></img>
-                    </label>
+                    <hr class=".f_hrline">
+                    <div>
+                        <button>Upgrade Plan <img src="images/power.png" alt=""></button>
+                    </div> 
                 </div>
             </div>
         </div>
-        <input type="radio" name="rad" id="aone">
-        <div class="f-page">
-            <div class="f_row3">
-                <div class="f_card_row1">
-                    <!-- row1_col1 -->
-                    <div class="f_sm_card1">
-                        <div>
-                            <img src="images/star.png" alt="">
-                        </div>
-                        <div>
-                            <img src="images/dots.png" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <img src="images/icon-folder.svg" alt="">
-                        <h3>AWS Credentials</h3>
-                        <hr class="f_hrline">
-                    </div>
-                    <div class="f_sm_card">
-                        <div>
-                            <p>503.9MB 12 items</p>
-                        </div>
-                        <div>
-                            <img style="position:relative;left:20px" src="images/avatar-anika-visser.png" alt="">
-                            <img src="images/avatar-miron-vitold.png" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <p>Credited at Apr 07,2023</p>
-                    </div>
-                </div>
-                <!-- row1_col2 -->
-                <div>
-                    <div class="f_card_row1">
-                        <div class="f_sm_card1">
-                            <div>
-                                <img src="images/star.png" alt="">
-                            </div>
-                            <div>
-                                <img src="images/dots.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <img src="images/icon-folder.svg" alt="">
-                            <h3>dev 2022</h3>
-                            <hr class="f_hrline">
-                        </div>
-                        <div class="f_sm_card">
-                            <div>
-                                <p>495.04MB 5 items</p>
-                            </div>
-                            <div>
-                                <div class="f_world">
-
-                                </div>
-                                <img src="images/world.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p>Credited at Apr 07,2023</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- row1_col3 -->
-                <div>
-                    <div class="f_card_row1">
-                        <div class="f_sm_card1">
-                            <div>
-                                <img src="images/star.png" alt="">
-                            </div>
-                            <div>
-                                <img src="images/dots.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <img src="images/icon-folder.svg" alt="">
-                            <h3>AI Resources</h3>
-                            <hr class="f_hrline">
-                        </div>
-                        <div class="f_sm_card">
-                            <div>
-                                <p>185.22MB 3 items</p>
-                            </div>
-                            <div style="position: relative;">
-                                <img style="position:absolute;right:20px" src="images/avatar-miron-vitold.png" alt="">
-                                <img src="images/avatar-alcides-antonio.png" alt="">
-                                <img style="position:absolute;right:44px" src="images/avatar-nasimiyu-danai.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p>Credited at Apr 07,2023</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- row2_col1 -->
-                <div>
-                    <div class="f_card_row1">
-                        <div class="f_sm_card1">
-                            <div>
-                                <img src="images/star.png" alt="">
-                            </div>
-                            <div>
-                                <img src="images/dots.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <img src="images/icon-folder.svg" alt="">
-                            <h3>Invoices</h3>
-                            <hr class="f_hrline">
-                        </div>
-                        <div class="f_sm_card">
-                            <div style="padding: 13px 0px">
-                                <p>503.9MB 12 items</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p>Credited at Apr 06,2023</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- row2_col2 -->
-                <div>
-                    <div class="f_card_row1">
-                        <div class="f_sm_card1">
-                            <div>
-                                <img src="images/star.png" alt="">
-                            </div>
-                            <div>
-                                <img src="images/dots.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <img src="images/icon-folder.svg" alt="">
-                            <h3>assets</h3>
-                            <hr class="f_hrline">
-                        </div>
-                        <div class="f_sm_card">
-                            <div>
-                                <p>99.07MB 12 items</p>
-                            </div>
-                            <div>
-                                <img style="position:relative;left:20px" src="images/avatar-anika-visser.png" alt="">
-                                <img src="images/avatar-miron-vitold.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p>Credited at Apr 07,2023</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- row2_col3 -->
-                <div>
-                    <div class="f_card_row1">
-                        <div class="f_sm_card1">
-                            <div>
-                                <img src="images/star.png" alt="">
-                            </div>
-                            <div>
-                                <img src="images/dots.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <img src="images/icon-pdf.svg" alt="">
-                            <h3>Pesonal-cv.pdf</h3>
-                            <hr class="f_hrline">
-                        </div>
-                        <div class="f_sm_card">
-                            <div>
-                                <p>450.38MB 12 items</p>
-                            </div>
-                            <div>
-                                <img src="images/avatar-alcides-antonio.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p>Credited at Apr 05,2023</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- row3_col1 -->
-                <div>
-                    <div class="f_card_row1">
-                        <div class="f_sm_card1">
-                            <div>
-                                <img src="images/star.png" alt="">
-                            </div>
-                            <div>
-                                <img src="images/dots.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <img src="images/icon-svg.svg" alt="">
-                            <h3>Company-logo-white.svg</h3>
-                            <hr class="f_hrline">
-                        </div>
-                        <div class="f_sm_card">
-                            <div>
-                                <p>726.84MB 12 items</p>
-                            </div>
-                            <div>
-                                <img style="position:relative;left:20px" src="images/avatar-anika-visser.png" alt="">
-                                <img src="images/avatar-nasimiyu-danai.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p>Credited at Apr 05,2023</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- row3_col2 -->
-                <div>
-                    <div class="f_card_row1">
-                        <div class="f_sm_card1">
-                            <div>
-                                <img src="images/star.png" alt="">
-                            </div>
-                            <div>
-                                <img src="images/dots.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <img src="images/icon-jpg.svg" alt="">
-                            <h3>landing-cover1.jpeg</h3>
-                            <hr class="f_hrline">
-                        </div>
-                        <div class="f_sm_card">
-                            <div>
-                                <p>712.23MB 12 items</p>
-                            </div>
-                            <div>
-                                <img src="images/avatar-iulia-albu.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p>Credited at Apr 05,2023</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- row3_col3 -->
-                <div>
-                    <div class="f_card_row1">
-                        <div class="f_sm_card1">
-                            <div>
-                                <img src="images/star.png" alt="">
-                            </div>
-                            <div>
-                                <img src="images/dots.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <img src="images/icon-svg.svg" alt="">
-                            <h3>About-Hero_shape-xl.svg</h3>
-                            <hr class="f_hrline">
-                        </div>
-                        <div class="f_sm_card">
-                            <div>
-                                <p>357.06MB 12 items</p>
-                            </div>
-                            <div>
-                                <img style="position:relative;left:20px" src="images/avatar-nasimiyu-danai.png" alt="">
-                                <img src="images/avatar-iulia-albu.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p>Credited at Apr 05,2023</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="f-bottom">
-                <div class="f-row">
-                    <p>Rows Per Head:</p>
-                </div>
-                <div>
-                    <select name="num" id="num">
-                        <option value="5">9</option>
-                        <option value="10">18</option>
-                    </select>
-                </div>
-                <div class="f-num">
-                    10-18 of 25
-                </div>
-                <div class="f-arrow">
-                    <label for="aone">
-                        <img src="images/left-arrow.png" alt="one"></img>
-                    </label>
-                    <label for="atwo">
-                        <img src="images/right-arrow.png" alt="two"></img>
-                    </label>
-                </div>
-            </div>
-
-        </div>
-
-
-    </div>
-
-
-    </div>
 </body>
 
 </html>
