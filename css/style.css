@@ -792,7 +792,7 @@ select#val {
 
 .c-bottom {
     display: grid;
-    grid-template-columns: auto 5% 8% 8% 4%;
+    grid-template-columns: auto 8% 8% 8% 4%;
     justify-content: flex-end;
     justify-items: end;
 }
@@ -2179,17 +2179,6 @@ label[for="e1"] {
     font-weight: 400;
     line-height: 1.5;
     color: rgb(17, 25, 39);
-}
-
-select#num {
-    border: 0;
-    padding: 14px;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-select#num:focus {
-    outline: none;
 }
 
 .f-num {
