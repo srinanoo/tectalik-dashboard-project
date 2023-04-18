@@ -520,18 +520,16 @@ label[for="filter"]:hover {
     background-color: rgb(47, 50, 218);
 }
 
-.c-box-shadow,
-.c-box-shadow1 {
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 5px 22px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.5px;
-}
-
 .c-row2 {
     display: flex;
     flex-wrap: wrap;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 5px 22px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.5px;
-    padding: 20px;
     align-items: center;
+    border-radius: 10px;
+}
+
+.c-list-row2 {
+    width: 100%;
 }
 
 .c-list-row2 input[type="radio"] {
@@ -541,6 +539,7 @@ label[for="filter"]:hover {
 .c-list-row2 .c-nav,
 .c-lab {
     position: relative;
+    padding: 10px 20px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -560,8 +559,8 @@ label[for="filter"]:hover {
 .c-list-row2>.c-nav .slider {
     position: absolute;
     height: 100%;
-    top: 20px;
-    width: 6%;
+    top: 2px;
+    width: 2%;
     bottom: 0;
     border-bottom: 2px solid rgb(41, 112, 255);
     transition: all 0.3s ease;
@@ -578,30 +577,66 @@ label[for="filter"]:hover {
 }
 
 #All:checked~.c-nav .slider {
-    left: -1px;
-    top: 20px;
+    left: 19px;
 }
 
 #AcceptsMarketing:checked~.c-nav .slider {
-    left: 38px;
-    width: 35%;
+    left: 62px;
+    width: 13%;
 }
 
 #Prospect:checked~.c-nav .slider {
-    left: 204px;
-    width: 18%;
+    left: 239px;
+    width: 7%;
 }
 
 #Returning:checked~.c-nav .slider {
-    left: 300px;
-    width: 19%;
+    left: 336px;
+    width: 7%;
+}
+
+#All:checked~.c-fpage>.c-row5,
+#All:checked~.c-fpage>.c-bottom {
+    display: grid;
+}
+
+#All:checked~.c-spage>.c-row5,
+#All:checked~.c-spage>.c-bottom {
+    display: grid;
+}
+
+.c-fpage .c-am,
+.c-fpage .c-pr,
+.c-fpage .c-r {
+    display: none;
+}
+
+.c-spage .c-am,
+.c-spage .c-pr,
+.c-spage .c-r {
+    display: none;
+}
+
+#AcceptsMarketing:checked~.c-fpage>.c-am,
+#AcceptsMarketing:checked~.c-spage>.c-am {
+    display: grid;
+}
+
+#Prospect:checked~.c-fpage>.c-pr,
+#Prospect:checked~.c-spage>.c-pr {
+    display: grid;
+}
+
+#Returning:checked~.c-fpage>.c-r,
+#Returning:checked~.c-spage>.c-r {
+    display: grid;
 }
 
 .c-row3 {
     display: grid;
-    grid-template-columns: 57% 37%;
+    grid-template-columns: 81% 17%;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     padding: 20px 20px;
 }
 
@@ -638,11 +673,14 @@ input#cedit1:focus {
     border: 0;
 }
 
-.c-row3,
 .c-row4,
 .c-row5,
 .c-bottom {
     box-shadow: rgba(0, 0, 0, 0.04) 0px 5px 22px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.5px;
+}
+
+.c-bottom {
+    border-radius: 10px;
 }
 
 #val:focus~[for="val"] {
@@ -674,13 +712,12 @@ select#val {
     display: grid;
     grid-template-columns: 5% 34% 19% 10% 10% 10%;
     justify-content: space-between;
-    padding: 15px 16px;
+    padding: 15px 20px;
     align-items: center;
 }
 
 .c-row4 {
     background-color: rgb(248, 249, 250);
-    padding: 15Px;
 }
 
 .c-row4>div {
@@ -694,7 +731,7 @@ select#val {
 
 .c-act {
     display: flex;
-    justify-content: space-between;
+    column-gap: 25px;
 }
 
 .c-row5:hover {
@@ -740,7 +777,6 @@ select#val {
 .c-ord p,
 .c-spent {
     margin: 0;
-    border-bottom: 1px solid rgb(242, 244, 247);
     text-align: left;
     color: rgb(17, 25, 39);
 
@@ -756,7 +792,7 @@ select#val {
 
 .c-bottom {
     display: grid;
-    grid-template-columns: auto 15% 15% 15%;
+    grid-template-columns: auto 5% 8% 8% 4%;
     justify-content: flex-end;
     justify-items: end;
 }
@@ -770,10 +806,10 @@ select#val {
 }
 
 select#num {
+    font-size: 1rem;
     border: 0;
     margin-left: 4px;
-    padding: 21px;
-
+    padding: 18px 1px;
 }
 
 select#num:focus {
@@ -936,40 +972,39 @@ input#aone {
     display: none;
 }
 
-#cdetails:checked~.tab>.c-content .c-main-box {
-    display: flex;
+#cdetails:checked~.tab>.c-main-box,
+#cinvoices:checked~.tab>.c-invoices {
+    display: grid;
 }
 
-#cinvoices:checked~.tab>.c-content .c-invoices {
-    display: grid;
+#cinvoices:checked~.tab>.c-main-box,
+#clogs:checked~.tab>.c-main-box {
+    display: none;
 }
 
 .c-lab .c-navl {
     position: absolute;
     width: 2%;
     border: 0;
+    top: 3px;
     transition: all 0.3s ease;
     height: 100%;
     border-bottom: 3px solid rgb(41, 112, 255);
 }
 
 #cdetails:checked~.c-lab .c-navl {
-    left: 0%;
-    width: 5%;
+    left: 2%;
+    width: 4%;
 }
 
 #cinvoices:checked~.c-lab .c-navl {
     width: 6%;
-    left: 6%;
+    left: 8%;
 }
 
 #clogs:checked~.c-lab .c-navl {
-    width: 3%;
-    left: 14%;
-}
-
-.c-lab label {
-    margin-bottom: 20px;
+    width: 4%;
+    left: 16%;
 }
 
 .c-container hr {
@@ -1023,6 +1058,8 @@ input#aone {
 
 .c-box-shadow1 {
     margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 5px;
 }
 
 .c-email button {
@@ -1054,9 +1091,9 @@ input#aone {
 
 .c-p {
     margin: 0;
+    margin-top: 15px;
     color: rgb(108, 115, 127);
     font-size: smaller;
-    margin-top: 10px;
     line-height: 1.5;
 }
 
@@ -1172,17 +1209,151 @@ input#cinvoice1 {
 
 .c-gridedit>div {
     position: relative;
+    line-height: 1;
 }
 
 .c-gridedit>div label {
     position: absolute;
-    left: 15px;
+    left: 14px;
     top: 8px;
     font-size: 14px;
     font-weight: 500;
     color: rgb(108, 115, 127);
 }
 
+<<<<<<< Updated upstream
+=======
+input#cedit,
+input#cedit1 {
+    width: 100%;
+    padding: 25px 12px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 7px;
+    border: thin solid rgb(207, 209, 211);
+}
+
+input#cedit:hover,
+input#cedit1:hover,
+input#search:hover,
+select#val:hover,
+.c-edit:hover {
+    background-color: rgb(241, 242, 244);
+}
+
+.c-gridedit1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.c-gtoggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    margin: 15px 0px;
+}
+
+.c-gtog {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-gtog h6 {
+    margin: 0px 0px 0.35em;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.57;
+}
+
+.c-gtog p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.57;
+    color: rgb(108, 115, 127);
+    margin: 8px 0px 0px;
+}
+
+.c-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.c-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.c-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.c-slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 1px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.c-slider {
+    background-color: #2196F3;
+}
+
+input:focus+.c-slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.c-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.c-slider.round {
+    border-radius: 34px;
+}
+
+.c-slider.round:before {
+    border-radius: 50%;
+}
+
+.c-foot {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    padding: 24px
+}
+
+.c-foot>div:nth-child(2) a {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #050505;
+}
+
+.c-foot>div:nth-child(2) a:hover {
+    background-color: lightgray;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+>>>>>>> Stashed changes
 .blog-box {
     width: 96%;
     margin: auto;
