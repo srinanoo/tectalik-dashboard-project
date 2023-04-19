@@ -889,6 +889,10 @@ label[for="filter"]:hover {
     background-color: #ffffff;
 }
 
+/* .main h1 {
+    font-family: PlusSans;
+} */
+
 .c-container {
     width: 95%;
     margin: auto;
@@ -1273,7 +1277,7 @@ input#atwo {
 
 input#aone {
     display: none;
-} 
+}
 
 #atwo:checked~.c-spage,
 #aone:checked~.c-fpage {
@@ -1639,6 +1643,7 @@ input#cinvoice1 {
     color: rgb(180, 35, 24);
     padding: 8px;
 }
+
 .c-gridedit {
     display: grid;
     grid-template-columns: 48% 48%;
