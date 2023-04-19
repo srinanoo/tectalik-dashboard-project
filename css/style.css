@@ -1873,10 +1873,6 @@ input[type=radio] {
     margin: auto;
 }
 
-.desc>div:last-child :first-child {
-    background-color: white;
-}
-
 .order-list-row1 {
     display: flex;
     flex-wrap: wrap;
