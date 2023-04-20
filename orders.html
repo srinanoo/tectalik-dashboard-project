@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lobster&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8d92229b07.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="fixed">
+        <div class="scroll">
+            <div class="scrollinner">
+
+            </div>
+        </div>
+    </div>
+    <div class="main order-main">
+        <div class="order-list-detail-flex order-list-row1">
+            <h1>Orders</h1>
+            <div><button class="order-list-detail-flex"><i class="fa-solid fa-plus" style="color: #ffffff;"></i><span> Add</span></button></div>
+        </div>
+        <hr class="order-list-hr">
+        <input type="radio" name="slide" id="all" checked>
+        <input type="radio" name="slide" id="completed">
+        <input type="radio" name="slide" id="cancelled">
+        <input type="radio" name="slide" id="pending">
+        <input type="radio" name="slide" id="rejected">
+        <nav class="order-list-detail-flex order-list-row2">
+            <label for="all">All</label>
+            <label for="completed">Completed</label>
+            <label for="cancelled">Cancelled</label>
+            <label for="pending">Pending</label>
+            <label for="rejected">Rejected</label>
+            <div class="order-slider"></div>
+        </nav>
+        <hr class="order-list-hr">
+        <div class="order-list-row3">
+            <div class="order-list-row3-col1">
+                <input type="text" name="order-search-data" placeholder="Search by order number" class="order-search">
+                <img src="images/notification-bell.png" alt="bell">
+            </div>
+            <div class="order-list-row3-col2">
+                <select name="order-list-dropdown" id="order-drop">
+                    <option>Newest</option>
+                    <option>Oldest</option>
+                </select>
+                <label for="order-drop">Sort by</label>
+            </div>
+        </div>
+        <input type="radio" name="next-page" id="next-page">
+        <input type="radio" name="next-page" id="next-page1">
+        <div class="order-next">
+            <div class="order-list-content order-content pending">
+                <div class="order-list-content-row">
+                    <div>
+                        <h4>APR</h4>
+                        <h4>10</h4>
+                    </div>
+                    <div>
+                        <p>DEV-102</p>
+                        <p>Total of $500.00</p>
+                    </div>
+                </div>
+                <div class="order-pending">PENDING</div>
+            </div>
+            <div class="order-list-content order-content completed">
+                <div class="order-list-content-row">
+                    <div>
+                        <h4>APR</h4>
+                        <h4>10</h4>
+                    </div>
+                    <div>
+                        <p>DEV-101</p>
+                        <p>Total of $325.00</p>
+                    </div>
+                </div>
+                <div class="order-completed">COMPLETED</div>
+            </div>
+            <div class="order-list-content order-content cancelled">
+                <div class="order-list-content-row">
+                    <div>
+                        <h4>APR</h4>
+                        <h4>10</h4>
+                    </div>
+                    <div>
+                        <p>DEV-100</p>
+                        <p>Total of $746.00</p>
+                    </div>
+                </div>
+                <div class="order-cancelled">CANCELLED</div>
+            </div>
+            <div class="order-list-content order-content rejected">
+                <div class="order-list-content-row">
+                    <div>
+                        <h4>APR</h4>
+                        <h4>10</h4>
+                    </div>
+                    <div>
+                        <p>DEV-99</p>
+                        <p>Total of $500.00</p>
+                    </div>
+                </div>
+                <div class="order-rejected">REJECTED</div>
+            </div>
+            <div class="order-list-content order-content completed">
+                <div class="order-list-content-row">
+                    <div>
+                        <h4>APR</h4>
+                        <h4>10</h4>
+                    </div>
+                    <div>
+                        <p>DEV-98</p>
+                        <p>Total of $500.00</p>
+                    </div>
+                </div>
+                <div class="order-completed">COMPLETED</div>
+            </div>
+        </div>
+        <div class="order-next1">
+            <div class="order-list-content order-content pending">
+                <div class="order-list-content-row">
+                    <div>
+                        <h4>APR</h4>
+                        <h4>10</h4>
+                    </div>
+                    <div>
+                        <p>DEV-97</p>
+                        <p>Total of $500.00</p>
+                    </div>
+                </div>
+                <div class="order-pending">PENDING</div>
+            </div>
+            <div class="order-list-content order-content completed">
+                <div class="order-list-content-row">
+                    <div>
+                        <h4>APR</h4>
+                        <h4>10</h4>
+                    </div>
+                    <div>
+                        <p>DEV-96</p>
+                        <p>Total of $325.00</p>
+                    </div>
+                </div>
+                <div class="order-completed">COMPLETED</div>
+            </div>
+            <div class="order-list-content order-content cancelled">
+                <div class="order-list-content-row">
+                    <div>
+                        <h4>APR</h4>
+                        <h4>10</h4>
+                    </div>
+                    <div>
+                        <p>DEV-95</p>
+                        <p>Total of $746.00</p>
+                    </div>
+                </div>
+                <div class="order-cancelled">CANCELLED</div>
+            </div>
+            <div class="order-list-content order-content rejected">
+                <div class="order-list-content-row">
+                    <div>
+                        <h4>APR</h4>
+                        <h4>10</h4>
+                    </div>
+                    <div>
+                        <p>DEV-94</p>
+                        <p>Total of $500.00</p>
+                    </div>
+                </div>
+                <div class="order-rejected">REJECTED</div>
+            </div>
+            <div class="order-list-content order-content cancelled">
+                <div class="order-list-content-row">
+                    <div>
+                        <h4>APR</h4>
+                        <h4>10</h4>
+                    </div>
+                    <div>
+                        <p>DEV-93</p>
+                        <p>Total of $746.00</p>
+                    </div>
+                </div>
+                <div class="order-cancelled">CANCELLED</div>
+            </div>
+        </div>
+        <div class="order-list-page">
+            <p>Rows per page:</p>
+            <select name="order-drop-page">
+                <option>5</option>
+                <option>10</option>
+                <option>15</option>
+            </select>
+            <p>1-2 of 2</p>
+            <label for="next-page"><p>&lt;</p></label>
+            <label for="next-page1"><p>&gt;</p></label>
+        </div>
+    </div>
+</body>
+</html>
