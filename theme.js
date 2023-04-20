@@ -35,15 +35,14 @@ const retrivecolor = function () {
 };
 document.onload = retrivecolor();
 
-// let nav_button = document.getElementById('nav-button');
-// let settings_close = document.getElementById('settings-close');
-// let settings_sidebar = document.getElementById('settings-sidebar');
-// document.onclick = function (e) {
-//     if (!nav_button.contains(e.target) && !settings_sidebar.contains(e.target)) {
-//         settings_sidebar.classList.remove('active');
-//     }
-// }
-// nav_button.onclick = function () {
-//     settings_sidebar.classList.toggle('active');
-//     settings_close.classList.toggle('acitve');
-// }
+let nav_button = document.getElementById('nav-button');
+let settings_close = document.getElementById('settings-close');
+let settings_sidebar = document.getElementById('settings-sidebar');
+document.onclick = function (e) {
+    if (!nav_button.contains(e.target) && !settings_sidebar.contains(e.target)) {
+        settings_sidebar.classList.remove('active');
+    }
+}
+nav_button.onclick = function () {
+    settings_sidebar.classList.toggle('active');
+}

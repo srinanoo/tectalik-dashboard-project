@@ -16,223 +16,234 @@
 </head>
 
 <body>
-    <div class="fixed">
-        <div class="scroll">
-            <div class="scrollinner">
-
+    <header>
+        <div>
+            <div>
+                <label for="open">&#x2630</label>
+            </div>
+            <div>
+                <img src="images/search-interface-symbol.png" alt="">
             </div>
         </div>
-    </div>
-    <div class="main">
-        <header>
+        <div>
+            <div class="bat_tooltip">
+                <img src="images/flag-uk.svg" alt="" style="width: 28px;">
+                <div>
+                    language
+                </div>
+            </div>
+            <div class="bat_tooltip">
+                <img src="images/notification-bell.png" alt="">
+                <div>
+                    notifications
+                </div>
+            </div>
+            <div class="bat_tooltip">
+                <i class="fa-solid fa-user-group"></i>
+                <div>
+                    contacts
+                </div>
+            </div>
+            <div>
+                <div style="width: 32px; height: 32px;">
+                    <img src="images/avatar-anika-visser.png" alt="" style="border-radius: 50%;">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="blog-box">
+        <div class="blog-margin">
+            <h2 class="blog-h2">Blog</h2>
+        </div>
+        <div class="blog-r1">
+            <ul>
+                <li><a href="customer.html">Dashboard</a></li>
+                <li></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li></li>
+                <li><a href="#list">List</a></li>
+            </ul>
+        </div>
+        <div class="blog-r2">
+            <h6>Hello,Admin</h6>
+            <a href="blog-edit.html">New Post</a>
+        </div>
+        <h2 class="blog-h2">
+            Recent Articles
+        </h2>
+        <div class="blog-p">
+            <p>Discover the latest news, tips and user research insights from Acme.</p>
+            <p>You will learn about web infrastructure, design systems and devops APIs best practices.</p>
+        </div>
+        <hr class="blog-hr">
+        <div class="blog-r3">
+            <div>
+                <a href="blog-post-details.html" style="background-image: url(images/blog-main1.webp);"></a>
+                <div>
+                    <p>Programming</p>
+                    <a href="blog-post-details.html">
+                        <h3>Why I Still Lisp, and You Should Too</h3>
+                    </a>
+                    <p>Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non
+                        nibh.
+                    </p>
+                    <div class="blog-c1">
+                        <div>
+                            <div>
+                                <img src="images/avatar-jie-yan-song.png" alt="">
+                            </div>
+                            <h5>By Jie Yan Song • Apr 8, 2023
+                            </h5>
+                        </div>
+                        <div>
+                            <p>5 min read</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="blog-post-details.html" style="background-image: url(images/blog-main2.webp);"></a>
+                <div>
+                    <p>Productivity</p>
+                    <a href="blog-post-details.html">
+                        <h3>Scrum Has Hit the Glass Ceiling</h3>
+                    </a>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    </p>
+                    <div class="blog-c1">
+                        <div>
+                            <div>
+                                <img src="images/avatar-omar-darboe.png" alt="">
+                            </div>
+                            <h5>By Omar Darobe • Apr 8, 2023
+                            </h5>
+                        </div>
+                        <div>
+                            <p>6 min read</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="blog-post-details.html" style="background-image: url(images/blog-main3.webp);"></a>
+                <div>
+                    <p>Entrepreneurs</p>
+                    <a href="blog-post-details.html">
+                        <h3>How Model View Controller (MVC) Architectures Work</h3>
+                    </a>
+                    <p>Praesent eget leo mauris. Morbi ac vulputate nibh. In hac habitasse platea dictumst.</p>
+                    <div class="blog-c1">
+                        <div>
+                            <div>
+                                <img src="images/avatar-siegbert-gottfried.png" alt="">
+                            </div>
+                            <h5>By Siegbert Gottfried • Apr 8, 2023
+                            </h5>
+                        </div>
+                        <div>
+                            <p>3 min read</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="blog-post-details.html" style="background-image: url(images/blog-main4.webp);"></a>
+                <div>
+                    <p>Innovation</p>
+                    <a href="blog-post-details.html">
+                        <h3>Generating Passive Income Is Hard, Here Is a Better Option</h3>
+                    </a>
+                    <p>Phasellus eu commodo lacus, eget tristique nunc. Ut ullamcorper semper nunc sit amet
+                        vehicula.
+                    </p>
+                    <div class="blog-c1">
+                        <div>
+                            <div>
+                                <img src="images/avatar-iulia-albu.png" alt="">
+                            </div>
+                            <h5>By Iulia Albu • Apr 3, 2023
+                            </h5>
+                        </div>
+                        <div>
+                            <p>1 min read</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-r4">
+            <div><i class="fa-solid fa-arrow-left"></i><input type="button" value="Newer" disabled></div>
+            <div>Older posts <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="blog-r5">
             <div>
                 <div>
-                    <label for="#open">&#x2630</label>
-                </div>
-                <div>
-                    <img src="images/search-interface-symbol.png" alt="">
-                </div>
-            </div>
-            <div></div>
-            <div></div>
-        </header>
-        <div class="blog-box">
-            <div class="blog-margin">
-                <h2 class="blog-h2">Blog</h2>
-            </div>
-            <div class="blog-r1">
-                <ul>
-                    <li><a href="customer.html">Dashboard</a></li>
-                    <li></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li></li>
-                    <li><a href="#list">List</a></li>
-                </ul>
-            </div>
-            <div class="blog-r2">
-                <h6>Hello,Admin</h6>
-                <a href="blog-edit.html">New Post</a>
-            </div>
-            <h2 class="blog-h2">
-                Recent Articles
-            </h2>
-            <div class="blog-p">
-                <p>Discover the latest news, tips and user research insights from Acme.</p>
-                <p>You will learn about web infrastructure, design systems and devops APIs best practices.</p>
-            </div>
-            <hr class="blog-hr">
-            <div class="blog-r3">
-                <div>
-                    <a href="blog-post-details.html" style="background-image: url(images/blog-main1.webp);"></a>
-                    <div>
-                        <p>Programming</p>
-                        <a href="blog-post-details.html">
-                            <h3>Why I Still Lisp, and You Should Too</h3>
-                        </a>
-                        <p>Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non
-                            nibh.
-                        </p>
-                        <div class="blog-c1">
-                            <div>
-                                <div>
-                                    <img src="images/avatar-jie-yan-song.png" alt="">
-                                </div>
-                                <h5>By Jie Yan Song • Apr 8, 2023
-                                </h5>
-                            </div>
-                            <div>
-                                <p>5 min read</p>
-                            </div>
-                        </div>
+                    <h2 class="blog-h2">Join the developer list</h2>
+                    <p>Subscribe to our newsletter to make sure you don't miss anything.</p>
+                    <div class="blog-label">
+                        <input type="text" id="e1">
+                        <label for="e1"> Email address</label>
+                    </div>
+                    <div class="blog-sub">
+                        Subscribe
                     </div>
                 </div>
                 <div>
-                    <a href="blog-post-details.html" style="background-image: url(images/blog-main2.webp);"></a>
-                    <div>
-                        <p>Productivity</p>
-                        <a href="blog-post-details.html">
-                            <h3>Scrum Has Hit the Glass Ceiling</h3>
-                        </a>
-                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                        </p>
-                        <div class="blog-c1">
-                            <div>
-                                <div>
-                                    <img src="images/avatar-omar-darboe.png" alt="">
-                                </div>
-                                <h5>By Omar Darobe • Apr 8, 2023
-                                </h5>
-                            </div>
-                            <div>
-                                <p>6 min read</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <a href="blog-post-details.html" style="background-image: url(images/blog-main3.webp);"></a>
-                    <div>
-                        <p>Entrepreneurs</p>
-                        <a href="blog-post-details.html">
-                            <h3>How Model View Controller (MVC) Architectures Work</h3>
-                        </a>
-                        <p>Praesent eget leo mauris. Morbi ac vulputate nibh. In hac habitasse platea dictumst.</p>
-                        <div class="blog-c1">
-                            <div>
-                                <div>
-                                    <img src="images/avatar-siegbert-gottfried.png" alt="">
-                                </div>
-                                <h5>By Siegbert Gottfried • Apr 8, 2023
-                                </h5>
-                            </div>
-                            <div>
-                                <p>3 min read</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <a href="blog-post-details.html" style="background-image: url(images/blog-main4.webp);"></a>
-                    <div>
-                        <p>Innovation</p>
-                        <a href="blog-post-details.html">
-                            <h3>Generating Passive Income Is Hard, Here Is a Better Option</h3>
-                        </a>
-                        <p>Phasellus eu commodo lacus, eget tristique nunc. Ut ullamcorper semper nunc sit amet
-                            vehicula.
-                        </p>
-                        <div class="blog-c1">
-                            <div>
-                                <div>
-                                    <img src="images/avatar-iulia-albu.png" alt="">
-                                </div>
-                                <h5>By Iulia Albu • Apr 3, 2023
-                                </h5>
-                            </div>
-                            <div>
-                                <p>1 min read</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="blog-r4">
-                <div><i class="fa-solid fa-arrow-left"></i><input type="button" value="Newer" disabled></div>
-                <div>Older posts <i class="fa-solid fa-arrow-right"></i></div>
-            </div>
-            <div class="blog-r5">
-                <div>
-                    <div>
-                        <h2 class="blog-h2">Join the developer list</h2>
-                        <p>Subscribe to our newsletter to make sure you don't miss anything.</p>
-                        <div class="blog-label">
-                            <input type="text" id="e1">
-                            <label for="e1"> Email address</label>
-                        </div>
-                        <div class="blog-sub">
-                            Subscribe
-                        </div>
-                    </div>
-                    <div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <nav class="dashboard-settings-nav">
-        <label for="settings"><i class="fa-solid fa-gear"></i></label>
-        <input type="radio" name="set" id="settings">
-        <div class="settings-block">
-            <div class="settings-block-header">
-                <h3>App Settings</h3>
-                <label for="settings-end"><i class="fa-solid fa-xmark"></i></label>
-                <input type="radio" name="set" id="settings-end">
+    <nav class="dashboard-settings-nav" id="nav-button">
+        <i class="fa-solid fa-gear"></i>
+    </nav>
+    <div class="settings-block" id="settings-sidebar">
+        <div class="settings-block-header">
+            <h3>App Settings</h3>
+        </div>
+        <h5>primary color</h5>
+        <div class="settings-block-color">
+            <div>
+                <label for="green"><input type="radio" name="color" id="green"> Green</label>
             </div>
-            <div class="settings-block-color">
-                <h5>primary color</h5>
-                <div>
-                    <label for="green"><input type="radio" name="color" id="green"> Green</label>
-                </div>
-                <div>
-                    <label for="pink"><input type="radio" name="color" id="pink"> Pink</label>
-                </div>
-                <div>
-                    <label for="orange"><input type="radio" name="color" id="orange"> Orange</label>
-                </div>
-                <div>
-                    <input type="radio" name="color" id="blue" checked>
-                    <label for="blue">Blue</label>
-                </div>
+            <div>
+                <label for="pink"><input type="radio" name="color" id="pink"> Pink</label>
             </div>
-            <div class="settings-block-theme">
-                <h5>color schema</h5>
-                <div>
-                    <input type="radio" name="theme" id="light">
-                    <label for="light"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-                            <path fill="#fff" fill-opacity="0.01"
-                                d="M12 15.5c2.4853 0 4.5-2.0147 4.5-4.5S14.4853 6.5 12 6.5 7.5 8.5147 7.5 11s2.0147 4.5 4.5 4.5Z">
-                            </path>
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 2v1.8m0 14.4V20m-7.2-9H3m3.8827-5.1173L5.6099 4.6099m11.5074 1.2728 1.2728-1.2728M6.8827 16.121l-1.2728 1.2728m11.5074-1.2728 1.2728 1.2728M21 11h-1.8m-2.7 0c0 2.4853-2.0147 4.5-4.5 4.5S7.5 13.4853 7.5 11 9.5147 6.5 12 6.5s4.5 2.0147 4.5 4.5Z">
-                            </path>
-                        </svg>
-                        Light
-                    </label>
-                </div>
-                <div>
-                    <input type="radio" name="theme" id="dark">
-                    <label for="dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-                            <path fill="#fff" fill-opacity="0.01" stroke="currentColor" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="2"
-                                d="M22 15.8442c-1.3134.594-2.7714.9246-4.3065.9246-5.7782 0-10.4623-4.6841-10.4623-10.4623 0-1.5351.3306-2.9931.9246-4.3065C4.5258 3.6416 2 7.2947 2 11.5377 2 17.3159 6.6841 22 12.4623 22c4.243 0 7.8961-2.5258 9.5377-6.1558Z">
-                            </path>
-                        </svg>
-                        Dark
-                    </label>
-                </div>
+            <div>
+                <label for="orange"><input type="radio" name="color" id="orange"> Orange</label>
+            </div>
+            <div>
+                <label for="blue"><input type="radio" name="color" id="blue"> Blue</label>
             </div>
         </div>
-    </nav>
+        <h5>color schema</h5>
+        <div class="settings-block-theme">
+            <div>
+                <input type="radio" name="theme" id="light">
+                <label for="light"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                        <path fill="#fff" fill-opacity="0.01"
+                            d="M12 15.5c2.4853 0 4.5-2.0147 4.5-4.5S14.4853 6.5 12 6.5 7.5 8.5147 7.5 11s2.0147 4.5 4.5 4.5Z">
+                        </path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 2v1.8m0 14.4V20m-7.2-9H3m3.8827-5.1173L5.6099 4.6099m11.5074 1.2728 1.2728-1.2728M6.8827 16.121l-1.2728 1.2728m11.5074-1.2728 1.2728 1.2728M21 11h-1.8m-2.7 0c0 2.4853-2.0147 4.5-4.5 4.5S7.5 13.4853 7.5 11 9.5147 6.5 12 6.5s4.5 2.0147 4.5 4.5Z">
+                        </path>
+                    </svg>
+                    Light
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="theme" id="dark">
+                <label for="dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                        <path fill="#fff" fill-opacity="0.01" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            d="M22 15.8442c-1.3134.594-2.7714.9246-4.3065.9246-5.7782 0-10.4623-4.6841-10.4623-10.4623 0-1.5351.3306-2.9931.9246-4.3065C4.5258 3.6416 2 7.2947 2 11.5377 2 17.3159 6.6841 22 12.4623 22c4.243 0 7.8961-2.5258 9.5377-6.1558Z">
+                        </path>
+                    </svg>
+                    Dark
+                </label>
+            </div>
+        </div>
+    </div>
+    <i class="fa-solid fa-xmark" id="settings-close"></i>
     <noscript>
         please enable your javascript option in your devie.
     </noscript>
