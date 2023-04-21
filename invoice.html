@@ -9,234 +9,789 @@
     <script src="https://kit.fontawesome.com/8d92229b07.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"> -->
-    </script><link rel="stylesheet" href="css/style.css ">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    </script>
+    <link rel="stylesheet" href="css/style.css ">
 </head>
 
 <body>
-        <div class="fixed">
-        </div>
-        <div class="main">
-            <section>
-            <section>
-                <div class="invoice">
-                    <div class="in">
-                        <div>
-                            <h2>Invoice</h2>
+    <div class="fixed">
+    </div>
+    <div class="main">
+        <section>
+            <input type="radio" name="1" id="previous">
+            <input type="radio" name="1" id="next">
+            <input type="radio" name="2" id="up">
+            <input type="radio" name="3" id="filter" checked>
+            <input type="radio" name="3" id="fils">
+            <input type="radio" name="4" id="pls">
+            <!-- <input type="checkbox" name="5" id="chk1"> -->
+            <div class="invoice">
+                <div class="in">
+                    <div>
+                        <h2>Invoice</h2>
+                    </div>
+                    <div class="but">
+                        <button id="fil">
+                            <label for="filter">
+                                <i class="fa-solid fa-filter"></i>&emsp;Fliter
+                            </label>
+                        </button>
+                        <button id="fil">
+                            <label for="fils">
+                                <i class="fa-solid fa-filter"></i>&emsp;Fliter
+                            </label>
+                        </button>
+                        <button>
+                            <label for="pls">
+                                <i class="fa-light fa-plus" style="margin: 7px;"></i>New
+                            </label>
+                        </button>
+                    </div>
+                </div>
+                <div class="gri-3">
+                    <div class="invo">
+                        <div style="background-color:rgba(240,253,249,1);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                                <path fill="#fff" fill-opacity="0.01" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M4 7.8c0-1.6802 0-2.5202.327-3.162a3 3 0 0 1 1.311-1.311C6.2798 3 7.1198 3 8.8 3h6.4c1.6802 0 2.5202 0 3.162.327a2.9997 2.9997 0 0 1 1.311 1.311C20 5.2798 20 6.1198 20 7.8V21l-2.75-2-2.5 2L12 19l-2.75 2-2.5-2L4 21V7.8Z">
+                                </path>
+                            </svg>
                         </div>
-                        <div class="but">
-                            <button id="fil"><i class="fa-solid fa-filter"></i>&emsp;Fliter</button>
-                            <button><i class="fa-light fa-plus"></i>&emsp;New</button>
+                        <div>
+                            <div>Total</div>
+                            <div>&dollar;5,300.00</div>
+                            <div>from 12</div>
                         </div>
                     </div>
-                    <div class="gri-3">
-                        <div class="invo">
-                            <div style="background-color:rgba(240,253,249,1);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                    <div class="invo">
+                        <div style="background-color:rgba(229,231,235,1);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                style="color:rgb(34, 235, 168) ">
+                                <path fill="#fff" fill-opacity="0.01"
+                                    d="M4 7.8c0-1.6802 0-2.5202.327-3.162a3 3 0 0 1 1.311-1.311C6.2798 3 7.1198 3 8.8 3h6.4c1.6802 0 2.5202 0 3.162.327a2.9997 2.9997 0 0 1 1.311 1.311C20 5.2798 20 6.1198 20 7.8V21l-2.75-2-2.5 2L12 19l-2.75 2-2.5-2L4 21V7.8Z">
+                                </path>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="m9 10.5 2 2L15.5 8M20 21V7.8c0-1.6802 0-2.5202-.327-3.162a2.9997 2.9997 0 0 0-1.311-1.311C17.7202 3 16.8802 3 15.2 3H8.8c-1.6802 0-2.5202 0-3.162.327a3 3 0 0 0-1.311 1.311C4 5.2798 4 6.1198 4 7.8V21l2.75-2 2.5 2L12 19l2.75 2 2.5-2L20 21Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <div>Total</div>
+                            <div>&dollar;5,300.00</div>
+                            <div>from 12</div>
+                        </div>
+                    </div>
+                    <div class="invo">
+                        <div style="background-color:rgba(255,250,235,1);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                style="color:rgb(255, 145, 0); vertical-align: bottom; ">
+                                <path fill="#fff" fill-opacity="0.01"
+                                    d="M12 20c4.9706 0 9-4.0294 9-9s-4.0294-9-9-9-9 4.0294-9 9 4.0294 9 9 9Z">
+                                </path>
+                                <path fill="#fff" fill-opacity="0.01" d="M12 5.6V11l3.6 1.8"></path>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M12 5.6V11l3.6 1.8M21 11c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <div>Total</div>
+                            <div>&dollar;5,300.00</div>
+                            <div>from 12</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cancel">
+                    <div id="in-cancel">
+                        <h6>Canceled(0)</h6>
+                    </div>
+                    <div id="in-paid-3">
+                        <h6>paid(3)</h6>
+                    </div>
+                    <div id="in-paid-1">
+                        <h6>paid(1)</h6>
+                    </div>
+                    <div class="prepaid">
+                        <div class="paid" id="acme">
+                            <div class="as">
+                                <div>AS</div>
+                                <div>
+                                    <p>INV-0019</p>
+                                    <p>06/04/2023</p>
+                                </div>
+                            </div>
+                            <div>&dollar; 55.50</div>
+                            <div>
+                                <p>Issued</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <p>Due</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <div><button>PAID</button></div>
+                            </div>
+                            <div>
+                                <div><a href="invoice-list.html"><i class="fa-solid fa-arrow-right fa-2x"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="paid" id="dispatch">
+                            <div class="as">
+                                <div>DI</div>
+                                <div>
+                                    <p>INV-0014</p>
+                                    <p>Dispatcher Inc.
+                                </div>
+                            </div>
+                            <div>&dollar; 55.50</div>
+                            <div>
+                                <p>Issued</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <p>Due</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <div><button>PAID</button></div>
+                            </div>
+                            <div>
+                                <div><i class="fa-solid fa-arrow-right fa-2x"></i></div>
+                            </div>
+                        </div>
+                        <div class="paid" id="novelty">
+                            <div class="as">
+                                <div>NI</div>
+                                <div>
+                                    <p>INV-0013</p>
+                                    <p>Novelty I.S
+                                </div>
+                            </div>
+                            <div>&dollar; 55.50</div>
+                            <div>
+                                <p>Issued</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <p>Due</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <div><button>PAID</button></div>
+                            </div>
+                            <div>
+                                <div><i class="fa-solid fa-arrow-right fa-2x"></i></div>
+                            </div>
+                        </div>
+                        
+                        <div class="paid" id="blind">
+                            <div class="as">
+                                <div>BS</div>
+                                <div>
+                                    <p>INV-0018</p>
+                                    <p>06/04/2023</p>
+                                </div>
+                            </div>
+                            <div>&dollar; 55.50</div>
+                            <div>
+                                <p>Issued</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <p>Due</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <div><button>PAID</button></div>
+                            </div>
+                            <div>
+                                <div><a href="invoice-list.html"><i class="fa-solid fa-arrow-right fa-2x"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="paid" id="beauty">
+                            <div class="as">
+                                <div>BC</div>
+                                <div>
+                                    <p>INV-0017</p>
+                                    <p>06/04/2023</p>
+                                </div>
+                            </div>
+                            <div>&dollar; 55.50</div>
+                            <div>
+                                <p>Issued</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <p>Due</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <div><button>PAID</button></div>
+                            </div>
+                            <div>
+                                <div><a href="invoice-list.html"><i class="fa-solid fa-arrow-right fa-2x"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="in-pen">
+                        <h6>Pending(2)</h6>
+                    </div>
+                    <div class="pending">
+                        <div class="prepaid" id="matt">
+                            <div class="paid">
+                                <div class="as">
+                                    <div>MJ</div>
+                                    <div>
+                                        <p>INV-0021</p>
+                                        <p>Matt Jason</p>
+                                    </div>
+                                </div>
+                                <div>&dollar; 55.50</div>
+                                <div>
+                                    <p>Issued</p>
+                                    <p>06/04/2023</p>
+                                </div>
+                                <div>
+                                    <p>Due</p>
+                                    <p>06/04/2023</p>
+                                </div>
+                                <div>
+                                    <div><button>PENDING</button></div>
+                                </div>
+                                <div>
+                                    <div><i class="fa-solid fa-arrow-right fa-2x"></i></div>
+                                </div>
+                            </div>
+                            <div class="paid">
+                                <div class="as">
+                                    <div>MJ</div>
+                                    <div>
+                                        <p>INV-0020</p>
+                                        <p>Matt Jason</p>
+                                    </div>
+                                </div>
+                                <div>&dollar; 55.50</div>
+                                <div>
+                                    <p>Issued</p>
+                                    <p>06/04/2023</p>
+                                </div>
+                                <div>
+                                    <p>Due</p>
+                                    <p>06/04/2023</p>
+                                </div>
+                                <div>
+                                    <div><button>PENDING</button></div>
+                                </div>
+                                <div>
+                                    <div><i class="fa-solid fa-arrow-right fa-2x"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rp">
+                        <div>Row per page:</div>
+                        <div>
+                            <!-- <i class="fa-solid fa-caret-down" id="aright"></i> -->
+                            <select name="numbs">
+                                <option value="five">5</5option>
+                                <option value="ten">10</option>
+                                <option value="twf">25</option>
+                            </select>
+                            </label>
+
+
+                        </div>&emsp;
+                        <div>1-5 of 8 &emsp;</div>
+                        <div>
+                            <label for="previous">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </label>&emsp;
+                            <label for="next">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="invoice-2">
+                <div class="in">
+                    <div>
+                        <h2>Invoice</h2>
+                    </div>
+                    <div class="but">
+                        <button id="fil">
+                            <label for="filter">
+                                <i class="fa-solid fa-filter"></i>&emsp;Fliter
+                            </label>
+                        </button>
+                        <button id="fil">
+                            <label for="fils">
+                                <i class="fa-solid fa-filter"></i>&emsp;Fliter
+                            </label>
+                        </button>
+                        <button>
+                            <label for="pls ">
+                                <i class="fa-light fa-plus"></i>&emsp;New
+                            </label>
+                        </button>
+                    </div>
+                </div>
+                <div class="gri-3">
+                    <div class="invo">
+                        <div style="background-color:rgba(240,253,249,1);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                                <path fill="#fff" fill-opacity="0.01" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M4 7.8c0-1.6802 0-2.5202.327-3.162a3 3 0 0 1 1.311-1.311C6.2798 3 7.1198 3 8.8 3h6.4c1.6802 0 2.5202 0 3.162.327a2.9997 2.9997 0 0 1 1.311 1.311C20 5.2798 20 6.1198 20 7.8V21l-2.75-2-2.5 2L12 19l-2.75 2-2.5-2L4 21V7.8Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <div>Total</div>
+                            <div>&dollar;5,300.00</div>
+                            <div>from 12</div>
+                        </div>
+                    </div>
+                    <div class="invo">
+                        <div style="background-color:rgba(229,231,235,1);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                style="color:rgb(34, 235, 168) ">
+                                <path fill="#fff" fill-opacity="0.01"
+                                    d="M4 7.8c0-1.6802 0-2.5202.327-3.162a3 3 0 0 1 1.311-1.311C6.2798 3 7.1198 3 8.8 3h6.4c1.6802 0 2.5202 0 3.162.327a2.9997 2.9997 0 0 1 1.311 1.311C20 5.2798 20 6.1198 20 7.8V21l-2.75-2-2.5 2L12 19l-2.75 2-2.5-2L4 21V7.8Z">
+                                </path>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="m9 10.5 2 2L15.5 8M20 21V7.8c0-1.6802 0-2.5202-.327-3.162a2.9997 2.9997 0 0 0-1.311-1.311C17.7202 3 16.8802 3 15.2 3H8.8c-1.6802 0-2.5202 0-3.162.327a3 3 0 0 0-1.311 1.311C4 5.2798 4 6.1198 4 7.8V21l2.75-2 2.5 2L12 19l2.75 2 2.5-2L20 21Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <div>Total</div>
+                            <div>&dollar;5,300.00</div>
+                            <div>from 12</div>
+                        </div>
+                    </div>
+                    <div class="invo">
+                        <div style="background-color:rgba(255,250,235,1);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                style="color:yellow ">
+                                <path fill="#fff" fill-opacity="0.01"
+                                    d="M12 20c4.9706 0 9-4.0294 9-9s-4.0294-9-9-9-9 4.0294-9 9 4.0294 9 9 9Z">
+                                </path>
+                                <path fill="#fff" fill-opacity="0.01" d="M12 5.6V11l3.6 1.8"></path>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M12 5.6V11l3.6 1.8M21 11c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <div>Total</div>
+                            <div>&dollar;5,300.00</div>
+                            <div>from 12</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cancel">
+                    <div>
+                        <h6>Canceled(2)</h6>
+                    </div>
+                    <div class="prepaid">
+                        <div class="paid">
+                            <div class="as">
+                                <div>NI</div>
+                                <div>
+                                    <p>INV-0013</p>
+                                    <p>06/04/2023</p>
+                                </div>
+                            </div>
+                            <div>&dollar; 55.50</div>
+                            <div>
+                                <p>Issued</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <p>Due</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <div><button>CANCELED</button></div>
+                            </div>
+                            <div>
+                                <div><i class="fa-solid fa-arrow-right fa-2x"></i></div>
+                            </div>
+                        </div>
+                        <div class="paid">
+                            <div class="as">
+                                <div>TT</div>
+                                <div>
+                                    <p>INV-0019</p>
+                                    <p>06/04/2023</p>
+                                </div>
+                            </div>
+                            <div>&dollar; 55.50</div>
+                            <div>
+                                <p>Issued</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <p>Due</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <div><button>CANCELED</button></div>
+                            </div>
+                            <div>
+                                <div><i class="fa-solid fa-arrow-right fa-2x"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h6>Paid (1)</h6>
+                    </div>
+                    <div class="pending">
+                        <div class="prepaid">
+                            <div class="paid" id="dispatcher">
+                                <div class="as">
+                                    <div>DI</div>
+                                    <div>
+                                        <p>INV-0014</p>
+                                        <p>Dispatcher Inc.
+                                    </div>
+                                </div>
+                                <div>&dollar; 55.50</div>
+                                <div>
+                                    <p>Issued</p>
+                                    <p>06/04/2023</p>
+                                </div>
+                                <div>
+                                    <p>Due</p>
+                                    <p>06/04/2023</p>
+                                </div>
+                                <div>
+                                    <div><button>PAID</button></div>
+                                </div>
+                                <div>
+                                    <div><i class="fa-solid fa-arrow-right fa-2x"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h6>Pending (0)</h6>
+                    </div>
+                    <div class="rp">
+                        <div>Row per page:</div>
+                        <div><i class="fa-solid fa-caret-down" id="aright"></i>&emsp; </div>
+                        <div>1-6 of 8 </div>&emsp;
+                        <div>
+                            <label for="previous">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </label>&emsp;
+                            <label for="next">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-nav">
+                <h2>Filters</h2>
+                <div class="filter-search-main">
+                    <input type="search" id="filter-search">
+                    <label for="filter-search">Invoice Number</label>
+                </div>
+                <h5>Issue Date</h5>
+
+                <div class="filter-search-main">
+                    <input type="date" id="filter-from">
+                    <label for="filter-from">From</label>
+                </div>
+                <br>
+                <div class="filter-search-main">
+                    <input type="date" id="filter-to">
+                    <label for="filter-to">To</label>
+                </div>
+                <h5>From Customer</h5>
+                <div class="filter-checkbox">
+                    <div class="filter-checkbox-check">
+                        <label><input type="checkbox" id="chk1" onclick="showOne()"> Blind Spots Inc.<br></label>
+                        <label><input type="checkbox" id="chk2" onclick="showTwo()"> Dispatcher Inc.<br></label>
+                        <label><input type="checkbox" id="chk3" onclick="showThree()"> ACME SR<br></label>
+                        <label><input type="checkbox" id="chk4" onclick="showFour()">Novelty I.S<br></label>
+                        <label><input type="checkbox" id="chk5" onclick="showFive()">Beauty Clinic<br></label>
+                    </div>
+                </div>
+            </div>
+            <nav class="dashboard-settings-nav">
+                <label for="settings"><i class="fa-solid fa-gear"></i></label>
+                <input type="radio" name="set" id="settings">
+                <div class="settings-block">
+                    <div class="settings-block-header">
+                        <h3>App Settings</h3>
+                        <label for="settings-end"><i class="fa-solid fa-xmark"></i></label>
+                        <input type="radio" name="set" id="settings-end">
+                    </div>
+                    <div class="settings-block-color">
+                        <h5>primary color</h5>
+                        <div>
+                            <label for="green"><input type="radio" name="color" id="green"> Green</label>
+                        </div>
+                        <div>
+                            <label for="pink"><input type="radio" name="color" id="pink"> Pink</label>
+                        </div>
+                        <div>
+                            <label for="orange"><input type="radio" name="color" id="orange"> Orange</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="color" id="blue" checked>
+                            <label for="blue">Blue</label>
+                        </div>
+                    </div>
+                    <div class="settings-block-theme">
+                        <h5>color schema</h5>
+                        <div>
+                            <input type="radio" name="theme" id="light">
+                            <label for="light"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="none">
+                                    <path fill="#fff" fill-opacity="0.01"
+                                        d="M12 15.5c2.4853 0 4.5-2.0147 4.5-4.5S14.4853 6.5 12 6.5 7.5 8.5147 7.5 11s2.0147 4.5 4.5 4.5Z">
+                                    </path>
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 2v1.8m0 14.4V20m-7.2-9H3m3.8827-5.1173L5.6099 4.6099m11.5074 1.2728 1.2728-1.2728M6.8827 16.121l-1.2728 1.2728m11.5074-1.2728 1.2728 1.2728M21 11h-1.8m-2.7 0c0 2.4853-2.0147 4.5-4.5 4.5S7.5 13.4853 7.5 11 9.5147 6.5 12 6.5s4.5 2.0147 4.5 4.5Z">
+                                    </path>
+                                </svg>
+                                Light
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="theme" id="dark">
+                            <label for="dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="none">
                                     <path fill="#fff" fill-opacity="0.01" stroke="currentColor" stroke-linecap="round"
                                         stroke-linejoin="round" stroke-width="2"
-                                        d="M4 7.8c0-1.6802 0-2.5202.327-3.162a3 3 0 0 1 1.311-1.311C6.2798 3 7.1198 3 8.8 3h6.4c1.6802 0 2.5202 0 3.162.327a2.9997 2.9997 0 0 1 1.311 1.311C20 5.2798 20 6.1198 20 7.8V21l-2.75-2-2.5 2L12 19l-2.75 2-2.5-2L4 21V7.8Z">
+                                        d="M22 15.8442c-1.3134.594-2.7714.9246-4.3065.9246-5.7782 0-10.4623-4.6841-10.4623-10.4623 0-1.5351.3306-2.9931.9246-4.3065C4.5258 3.6416 2 7.2947 2 11.5377 2 17.3159 6.6841 22 12.4623 22c4.243 0 7.8961-2.5258 9.5377-6.1558Z">
                                     </path>
                                 </svg>
-                            </div>
-                            <div>
-                                <div>Total</div>
-                                <div>&dollar;5,300.00</div>
-                                <div>from 12</div>
-                            </div>
-                        </div>
-                        <div class="invo">
-                            <div style="background-color:rgba(229,231,235,1);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                    style="color:rgb(34, 235, 168) ">
-                                    <path fill="#fff" fill-opacity="0.01"
-                                        d="M4 7.8c0-1.6802 0-2.5202.327-3.162a3 3 0 0 1 1.311-1.311C6.2798 3 7.1198 3 8.8 3h6.4c1.6802 0 2.5202 0 3.162.327a2.9997 2.9997 0 0 1 1.311 1.311C20 5.2798 20 6.1198 20 7.8V21l-2.75-2-2.5 2L12 19l-2.75 2-2.5-2L4 21V7.8Z">
-                                    </path>
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="m9 10.5 2 2L15.5 8M20 21V7.8c0-1.6802 0-2.5202-.327-3.162a2.9997 2.9997 0 0 0-1.311-1.311C17.7202 3 16.8802 3 15.2 3H8.8c-1.6802 0-2.5202 0-3.162.327a3 3 0 0 0-1.311 1.311C4 5.2798 4 6.1198 4 7.8V21l2.75-2 2.5 2L12 19l2.75 2 2.5-2L20 21Z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div>
-                                <div>Total</div>
-                                <div>&dollar;5,300.00</div>
-                                <div>from 12</div>
-                            </div>
-                        </div>
-                        <div class="invo">
-                            <div style="background-color:rgba(255,250,235,1);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                    style="color:yellow ">
-                                    <path fill="#fff" fill-opacity="0.01"
-                                        d="M12 20c4.9706 0 9-4.0294 9-9s-4.0294-9-9-9-9 4.0294-9 9 4.0294 9 9 9Z">
-                                    </path>
-                                    <path fill="#fff" fill-opacity="0.01" d="M12 5.6V11l3.6 1.8"></path>
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M12 5.6V11l3.6 1.8M21 11c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div>
-                                <div>Total</div>
-                                <div>&dollar;5,300.00</div>
-                                <div>from 12</div>
-                            </div>
+                                Dark
+                            </label>
                         </div>
                     </div>
-                    <div class="cancel">
-                        <div>
-                            <h6>Canceled(0)</h6>
-                        </div>
-                        <div>
-                            <h6>paid(3)</h6>
-                        </div>
-                        <div class="prepaid">
-                            <div class="paid">
-                                <div class="as">
-                                    <div>AS</div>
-                                    <div>
-                                        <p>INV-0019</p>
-                                        <p>06/04/2023</p>
-                                    </div>
-                                </div>
-                                <div>&dollar; 55.50</div>
-                                <div>
-                                    <p>Issued</p>
-                                    <p>06/04/2023</p>
-                                </div>
-                                <div>
-                                    <p>Due</p>
-                                    <p>06/04/2023</p>
-                                </div>
-                                <div>
-                                    <div><button>PAID</button></div>
-                                </div>
-                                <div>
-                                    <div><i class="fa-solid fa-arrow-right fa-2x"></i></div>
-                                </div>
-                            </div>
-                            <div class="paid">
-                                <div class="as">
-                                    <div>BS</div>
-                                    <div>
-                                        <p>INV-0018</p>
-                                        <p>06/04/2023</p>
-                                    </div>
-                                </div>
-                                <div>&dollar; 55.50</div>
-                                <div>
-                                    <p>Issued</p>
-                                    <p>06/04/2023</p>
-                                </div>
-                                <div>
-                                    <p>Due</p>
-                                    <p>06/04/2023</p>
-                                </div>
-                                <div>
-                                    <div><button>PAID</button></div>
-                                </div>
-                                <div>
-                                    <div><i class="fa-solid fa-arrow-right fa-2x"></i></div>
-                                </div>
-                            </div>
-                            <div class="paid">
-                                <div class="as">
-                                    <div>BC</div>
-                                    <div>
-                                        <p>INV-0017d</p>
-                                        <p>06/04/2023</p>
-                                    </div>
-                                </div>
-                                <div>&dollar; 55.50</div>
-                                <div>
-                                    <p>Issued</p>
-                                    <p>06/04/2023</p>
-                                </div>
-                                <div>
-                                    <p>Due</p>
-                                    <p>06/04/2023</p>
-                                </div>
-                                <div>
-                                    <div><button>PAID</button></div>
-                                </div>
-                                <div>
-                                    <div><i class="fa-solid fa-arrow-right fa-2x"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div><h6>Pending(2)</h6></div>
-                            <div class="pending">
-                                <div class="prepaid">
-                                    <div class="paid">
-                                        <div class="as">
-                                            <div>MJ</div>
-                                            <div>
-                                                <p>INV-0021</p>
-                                                <p>Matt Jason</p>
-                                            </div>
-                                        </div>
-                                        <div>&dollar; 55.50</div>
-                                        <div>
-                                            <p>Issued</p>
-                                            <p>06/04/2023</p>
-                                        </div>
-                                        <div>
-                                            <p>Due</p>
-                                            <p>06/04/2023</p>
-                                        </div>
-                                        <div>
-                                            <div><button>PENDING</button></div>
-                                        </div>
-                                        <div>
-                                            <div><i class="fa-solid fa-arrow-right fa-2x"></i></div>
-                                        </div>
-                                    </div>
-                                    <div class="paid">
-                                        <div class="as">
-                                            <div>MJ</div>
-                                            <div>
-                                                <p>INV-0020</p>
-                                                <p>Matt Jason</p>
-                                            </div>
-                                        </div>
-                                        <div>&dollar; 55.50</div>
-                                        <div>
-                                            <p>Issued</p>
-                                            <p>06/04/2023</p>
-                                        </div>
-                                        <div>
-                                            <p>Due</p>
-                                            <p>06/04/2023</p>
-                                        </div>
-                                        <div>
-                                            <div><button>PENDING</button></div>
-                                        </div>
-                                        <div>
-                                            <div><i class="fa-solid fa-arrow-right fa-2x"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rp">
-                                <div>
-                                <p>Row per page: </p>
-                                </div>
-                                <div>
-                            
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-        </div>
-    </section>
+                </div>
+            </nav>
+        </section>
+    </div>
+    <script>
+
+        function showOne() {
+            let bl = document.getElementById("chk1");
+            let blin = document.getElementById("blind");
+            let dis = document.getElementById("dispatc");
+            let ac = document.getElementById("acme");
+            let nov = document.getElementById("novelty");
+            let bea = document.getElementById("beauty");
+            let mat = document.getElementById("matt");
+            let pen = document.getElementById("in-pen");
+            let cancel = document.getElementById("in-cancel");
+            let paid_3 = document.getElementById("in-paid-3");
+            let paid_1 = document.getElementById("in-paid-1");
+
+            if (bl.checked == true) {
+                blin.style.display = "grid";
+                blin.style.border = "none";
+                // dis.style.display = "none";
+                ac.style.display = "none";
+                nov.style.display = "none";
+                bea.style.display = "none";
+                mat.style.display = "none";
+                pen.style.display = "none";
+                cancel.style.display = "none";
+                paid_3.style.display = "none";
+                paid_1.style.display = "block";
+
+            }
+            else {
+                blind.style.display = "grid";
+                // dis.style.display = "grid";
+                ac.style.display = "grid";
+                nov.style.display = "grid";
+                bea.style.display = "grid";
+                mat.style.display = "grid";
+                pen.style.display = "block";
+                cancel.style.display = "block";
+                paid_1.style.display = "none";
+                paid_3.style.display = "block";
+            }
+        }
+
+        function showTwo() {
+            let disPatch = document.getElementById("chk2");
+            let blin = document.getElementById("blind");
+            let dis = document.getElementById("dispatch");
+            let ac = document.getElementById("acme");
+            let nov = document.getElementById("novelty");
+            let bea = document.getElementById("beauty");
+            let mat = document.getElementById("matt");
+            let pen = document.getElementById("in-pen");
+            let cancel = document.getElementById("in-cancel");
+            let paid_3 = document.getElementById("in-paid-3");
+            let paid_1 = document.getElementById("in-paid-1");
+
+            if (disPatch.checked == true) {
+                blin.style.display = "none";
+                dis.style.display = "grid";
+                dis.style.border = "none";
+                ac.style.display = "none";
+                nov.style.display = "none";
+                bea.style.display = "none";
+                mat.style.display = "none";
+                pen.style.display = "none";
+                cancel.style.display = "none";
+                paid_3.style.display = "none";
+                paid_1.style.display = "block";
+
+            }
+            else {
+                blind.style.display = "grid";
+                dis.style.display = "none";
+                ac.style.display = "grid";
+                nov.style.display = "grid";
+                bea.style.display = "grid";
+                mat.style.display = "grid";
+                pen.style.display = "block";
+                cancel.style.display = "block";
+                paid_1.style.display = "none";
+                paid_3.style.display = "block";
+            }
+        }
+        function showThree() {
+            let acme_srl = document.getElementById("chk3");
+            let blin = document.getElementById("blind");
+            let dis = document.getElementById("dispatch");
+            let ac = document.getElementById("acme");
+            let nov = document.getElementById("novelty");
+            let bea = document.getElementById("beauty");
+            let mat = document.getElementById("matt");
+            let pen = document.getElementById("in-pen");
+            let cancel = document.getElementById("in-cancel");
+            let paid_3 = document.getElementById("in-paid-3");
+            let paid_1 = document.getElementById("in-paid-1");
+
+            if (acme_srl.checked == true) {
+                blin.style.display = "none";
+                dis.style.display = "none";
+                ac.style.display = "grid";
+                ac.style.border = "none";
+                nov.style.display = "none";
+                bea.style.display = "none";
+                mat.style.display = "none";
+                pen.style.display = "none";
+                cancel.style.display = "none";
+                paid_3.style.display = "none";
+                paid_1.style.display = "block";
+
+            }
+            else {
+                blind.style.display = "grid";
+                dis.style.display = "none";
+                ac.style.display = "grid";
+                nov.style.display = "grid";
+                bea.style.display = "grid";
+                mat.style.display = "grid";
+                pen.style.display = "block";
+                cancel.style.display = "block";
+                paid_1.style.display = "none";
+                paid_3.style.display = "block";
+            }
+        }
+        function showFour() {
+            let novel = document.getElementById("chk4");
+            let blin = document.getElementById("blind");
+            let dis = document.getElementById("dispatch");
+            let ac = document.getElementById("acme");
+            let nov = document.getElementById("novelty");
+            let bea = document.getElementById("beauty");
+            let mat = document.getElementById("matt");
+            let pen = document.getElementById("in-pen");
+            let cancel = document.getElementById("in-cancel");
+            let paid_3 = document.getElementById("in-paid-3");
+            let paid_1 = document.getElementById("in-paid-1");
+
+            if (novel.checked == true) {
+                blin.style.display = "none";
+                dis.style.display = "none";
+                ac.style.display = "none";
+                nov.style.display = "grid";
+                nov.style.border = "none";
+                bea.style.display = "none";
+                mat.style.display = "none";
+                pen.style.display = "none";
+                cancel.style.display = "none";
+                paid_3.style.display = "none";
+                paid_1.style.display = "block";
+
+            }
+            else {
+                blind.style.display = "grid";
+                dis.style.display = "none";
+                ac.style.display = "grid";
+                nov.style.display = "none";
+                bea.style.display = "grid";
+                mat.style.display = "grid";
+                pen.style.display = "block";
+                cancel.style.display = "block";
+                paid_1.style.display = "none";
+                paid_3.style.display = "block";
+            }
+        }
+        function showFive() {
+            let beauty_clinic = document.getElementById("chk5");
+            let blin = document.getElementById("blind");
+            let dis = document.getElementById("dispatch");
+            let ac = document.getElementById("acme");
+            let nov = document.getElementById("novelty");
+            let bea = document.getElementById("beauty");
+            let mat = document.getElementById("matt");
+            let pen = document.getElementById("in-pen");
+            let cancel = document.getElementById("in-cancel");
+            let paid_3 = document.getElementById("in-paid-3");
+            let paid_1 = document.getElementById("in-paid-1");
+
+            if (beauty_clinic.checked == true) {
+                blin.style.display = "none";
+                dis.style.display = "none";
+                ac.style.display = "none";
+                nov.style.display = "none";
+                nov.style.border = "none";
+                bea.style.display = "grid";
+                mat.style.display = "none";
+                pen.style.display = "none";
+                cancel.style.display = "none";
+                paid_3.style.display = "none";
+                paid_1.style.display = "block";
+
+            }
+            else {
+                blind.style.display = "grid";
+                dis.style.display = "none";
+                ac.style.display = "grid";
+                nov.style.display = "none";
+                bea.style.display = "grid";
+                mat.style.display = "grid";
+                pen.style.display = "block";
+                cancel.style.display = "block";
+                paid_1.style.display = "none";
+                paid_3.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>

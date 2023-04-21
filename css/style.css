@@ -559,7 +559,7 @@ label[for="open"] {
 
 .in button {
     background-color: rgba(99, 102, 241, 1);
-    color: white;
+    color: #ffffff;
     border: solid 1px;
     border-radius: 10px;
     padding: 10px 5px;
@@ -583,7 +583,9 @@ label[for="up"]:hover {
 label[for="filter"]:hover {
     background-color: rgb(238, 235, 235);
     border-radius: 10px;
+    /* padding: 10px 12px; */
     padding: 10px 5px;
+
 }
 
 #filter:checked~.invoice,
@@ -599,7 +601,7 @@ label[for="filter"]:hover {
 
 
 .details-but>#preview {
-    background-color: white;
+    background-color: #ffffff;
     color: black;
     border: none;
     padding: 12px;
@@ -614,12 +616,12 @@ label[for="filter"]:hover {
 }
 
 #file-down>a {
-    color: white;
+    color: #ffffff;
 }
 
 .but button:first-child {
     background-color: #ffffff;
-    border: 1px white;
+    border: 1px #ffffff;
     color: #050505;
 }
 
@@ -630,9 +632,10 @@ label[for="filter"]:hover {
 .but button:nth-child(2) {
     position: absolute;
     background-color: #ffffff;
-    border: 1px white;
+    border: 1px #ffffff;
     color: #050505;
     display: none;
+    padding: 10px 14px;
 }
 
 .gri-3 {
@@ -650,7 +653,7 @@ label[for="filter"]:hover {
     border: solid 1px rgb(241, 237, 237);
     border-radius: 20px;
     padding: 20px;
-    color: gray;
+    color: rgb(128, 128, 128);
     line-height: 1.6;
 }
 
@@ -661,7 +664,7 @@ label[for="filter"]:hover {
 }
 
 .invo>div:last-child>div:nth-child(2) {
-    color: black;
+    color: #000000;
     font-weight: 800;
     font-family: "Inter"
 }
@@ -677,7 +680,7 @@ label[for="filter"]:hover {
 
 .cancel h6 {
     font-size: 1em;
-    color: gray;
+    color: #808080;
     /* text-align: justify; */
 }
 
@@ -726,7 +729,7 @@ label[for="filter"]:hover {
 }
 
 .paid>div p:last-child {
-    color: grey;
+    color: #808080;
     font-weight: 400;
 }
 
@@ -776,7 +779,7 @@ label[for="filter"]:hover {
     width: 100%;
     display: flex;
     padding: 20px 0;
-    color: gray;
+    color: #808080;
     font-size: small;
     justify-content: end;
 }
@@ -787,7 +790,7 @@ label[for="filter"]:hover {
 
 #ins a {
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 #ins a:hover {
@@ -796,7 +799,7 @@ label[for="filter"]:hover {
 
 .in .as>div:first-child {
     font-weight: 800;
-    padding: 15px;
+    padding: 22px 8px;
 }
 
 .in .as>div:nth-child(2)>p {
@@ -810,7 +813,7 @@ label[for="filter"]:hover {
 
 .in .as>div:nth-child(2)>:last-child,
 .issue-bill>:last-child p {
-    color: gray;
+    color: #808080;
 }
 
 .in-in {
@@ -883,8 +886,12 @@ label[for="filter"]:hover {
 }
 
 .desc>div:last-child :first-child {
-    background-color: white;
+    background-color: #ffffff;
 }
+
+/* .main h1 {
+    font-family: PlusSans;
+} */
 
 .c-container {
     width: 95%;
@@ -922,12 +929,12 @@ label[for="filter"]:hover {
     margin-right: 20px;
     border-radius: 5px;
     padding: 7px 12px;
-    background-color: white;
+    background-color: #ffffff;
     cursor: pointer;
 }
 
 .c-c2 button:hover {
-    background-color: lightgrey;
+    background-color: #d3d3d3;
 
 }
 
@@ -941,7 +948,7 @@ label[for="filter"]:hover {
 
 .c-c3 button {
     background-color: rgb(99, 102, 241);
-    color: white;
+    color: #ffffff;
     border: 0;
     border-radius: 5px;
     padding: 10px 20px;
@@ -1270,7 +1277,7 @@ input#atwo {
 
 input#aone {
     display: none;
-} 
+}
 
 #atwo:checked~.c-spage,
 #aone:checked~.c-fpage {
@@ -1510,13 +1517,13 @@ input#aone {
 }
 
 .c-box3>div {
-    color: red;
-    background-color: white;
+    color: #ff0000;
+    background-color: #ffffff;
     cursor: pointer;
     border-radius: 5px;
     padding: 5px 15px;
     margin-right: 20px;
-    border: 1px solid red;
+    border: 1px solid #ff0000;
 }
 
 .c-box3 {
@@ -1636,6 +1643,7 @@ input#cinvoice1 {
     color: rgb(180, 35, 24);
     padding: 8px;
 }
+
 .c-gridedit {
     display: grid;
     grid-template-columns: 48% 48%;
@@ -2933,16 +2941,12 @@ label[for=aone],
 }
 
 .desc1>:first-child {
-    background-color: rgb(194, 194, 194);
+    background-color: #c2c2c2;
 }
 
 .orderbox {
     width: 95%;
     margin: auto;
-}
-
-.desc>div:last-child :first-child {
-    background-color: white;
 }
 
 .order-list-row1 {
