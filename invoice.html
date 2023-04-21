@@ -26,6 +26,7 @@
             <input type="radio" name="3" id="filter" checked>
             <input type="radio" name="3" id="fils">
             <input type="radio" name="4" id="pls">
+            <!-- <input type="checkbox" name="5" id="chk1"> -->
             <div class="invoice">
                 <div class="in">
                     <div>
@@ -43,8 +44,8 @@
                             </label>
                         </button>
                         <button>
-                            <label for="pls ">
-                                <i class="fa-light fa-plus"></i>&emsp;New
+                            <label for="pls">
+                                <i class="fa-light fa-plus" style="margin: 7px;"></i>New
                             </label>
                         </button>
                     </div>
@@ -87,7 +88,7 @@
                     <div class="invo">
                         <div style="background-color:rgba(255,250,235,1);">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                style="color:yellow ">
+                                style="color:rgb(255, 145, 0); vertical-align: bottom; ">
                                 <path fill="#fff" fill-opacity="0.01"
                                     d="M12 20c4.9706 0 9-4.0294 9-9s-4.0294-9-9-9-9 4.0294-9 9 4.0294 9 9 9Z">
                                 </path>
@@ -106,14 +107,17 @@
                     </div>
                 </div>
                 <div class="cancel">
-                    <div>
+                    <div id="in-cancel">
                         <h6>Canceled(0)</h6>
                     </div>
-                    <div>
+                    <div id="in-paid-3">
                         <h6>paid(3)</h6>
                     </div>
+                    <div id="in-paid-1">
+                        <h6>paid(1)</h6>
+                    </div>
                     <div class="prepaid">
-                        <div class="paid">
+                        <div class="paid" id="acme">
                             <div class="as">
                                 <div>AS</div>
                                 <div>
@@ -134,10 +138,59 @@
                                 <div><button>PAID</button></div>
                             </div>
                             <div>
+                                <div><a href="invoice-list.html"><i class="fa-solid fa-arrow-right fa-2x"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="paid" id="dispatch">
+                            <div class="as">
+                                <div>DI</div>
+                                <div>
+                                    <p>INV-0014</p>
+                                    <p>Dispatcher Inc.
+                                </div>
+                            </div>
+                            <div>&dollar; 55.50</div>
+                            <div>
+                                <p>Issued</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <p>Due</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <div><button>PAID</button></div>
+                            </div>
+                            <div>
                                 <div><i class="fa-solid fa-arrow-right fa-2x"></i></div>
                             </div>
                         </div>
-                        <div class="paid">
+                        <div class="paid" id="novelty">
+                            <div class="as">
+                                <div>NI</div>
+                                <div>
+                                    <p>INV-0013</p>
+                                    <p>Novelty I.S
+                                </div>
+                            </div>
+                            <div>&dollar; 55.50</div>
+                            <div>
+                                <p>Issued</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <p>Due</p>
+                                <p>06/04/2023</p>
+                            </div>
+                            <div>
+                                <div><button>PAID</button></div>
+                            </div>
+                            <div>
+                                <div><i class="fa-solid fa-arrow-right fa-2x"></i></div>
+                            </div>
+                        </div>
+                        
+                        <div class="paid" id="blind">
                             <div class="as">
                                 <div>BS</div>
                                 <div>
@@ -158,14 +211,14 @@
                                 <div><button>PAID</button></div>
                             </div>
                             <div>
-                                <div><i class="fa-solid fa-arrow-right fa-2x"></i></div>
+                                <div><a href="invoice-list.html"><i class="fa-solid fa-arrow-right fa-2x"></i></a></div>
                             </div>
                         </div>
-                        <div class="paid">
+                        <div class="paid" id="beauty">
                             <div class="as">
                                 <div>BC</div>
                                 <div>
-                                    <p>INV-0017d</p>
+                                    <p>INV-0017</p>
                                     <p>06/04/2023</p>
                                 </div>
                             </div>
@@ -182,15 +235,15 @@
                                 <div><button>PAID</button></div>
                             </div>
                             <div>
-                                <div><i class="fa-solid fa-arrow-right fa-2x"></i></div>
+                                <div><a href="invoice-list.html"><i class="fa-solid fa-arrow-right fa-2x"></i></a></div>
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div id="in-pen">
                         <h6>Pending(2)</h6>
                     </div>
                     <div class="pending">
-                        <div class="prepaid">
+                        <div class="prepaid" id="matt">
                             <div class="paid">
                                 <div class="as">
                                     <div>MJ</div>
@@ -242,13 +295,19 @@
                         </div>
                     </div>
                     <div class="rp">
-                        <div>Row per page: 5 &nbsp;</div>
+                        <div>Row per page:</div>
                         <div>
-                            <label for="up">
-                                <i class="fa-solid fa-caret-down" id="aright"></i>
+                            <!-- <i class="fa-solid fa-caret-down" id="aright"></i> -->
+                            <select name="numbs">
+                                <option value="five">5</5option>
+                                <option value="ten">10</option>
+                                <option value="twf">25</option>
+                            </select>
                             </label>
+
+
                         </div>&emsp;
-                        <div>1-5 of 8 </div>&emsp;
+                        <div>1-5 of 8 &emsp;</div>
                         <div>
                             <label for="previous">
                                 <i class="fa-solid fa-angle-left"></i>
@@ -346,9 +405,9 @@
                     <div class="prepaid">
                         <div class="paid">
                             <div class="as">
-                                <div>TT</div>
+                                <div>NI</div>
                                 <div>
-                                    <p>INV-0019</p>
+                                    <p>INV-0013</p>
                                     <p>06/04/2023</p>
                                 </div>
                             </div>
@@ -370,9 +429,9 @@
                         </div>
                         <div class="paid">
                             <div class="as">
-                                <div>NI</div>
+                                <div>TT</div>
                                 <div>
-                                    <p>INV-0018</p>
+                                    <p>INV-0019</p>
                                     <p>06/04/2023</p>
                                 </div>
                             </div>
@@ -398,12 +457,12 @@
                     </div>
                     <div class="pending">
                         <div class="prepaid">
-                            <div class="paid">
+                            <div class="paid" id="dispatcher">
                                 <div class="as">
-                                    <div>MJ</div>
+                                    <div>DI</div>
                                     <div>
-                                        <p>INV-0020</p>
-                                        <p>Matt Jason</p>
+                                        <p>INV-0014</p>
+                                        <p>Dispatcher Inc.
                                     </div>
                                 </div>
                                 <div>&dollar; 55.50</div>
@@ -428,7 +487,7 @@
                         <h6>Pending (0)</h6>
                     </div>
                     <div class="rp">
-                        <div>Row per page: 5 &nbsp;</div>
+                        <div>Row per page:</div>
                         <div><i class="fa-solid fa-caret-down" id="aright"></i>&emsp; </div>
                         <div>1-6 of 8 </div>&emsp;
                         <div>
@@ -462,17 +521,277 @@
                 <h5>From Customer</h5>
                 <div class="filter-checkbox">
                     <div class="filter-checkbox-check">
-                        <input type="checkbox">&nbsp;Blind Spots Inc.<br>
-                        <input type="checkbox">&nbsp;Dispatcher Inc.<br>
-                        <input type="checkbox">&nbsp;ACME SRL<br>
-                        <input type="checkbox">&nbsp;Novelty I.S<br>
-                        <input type="checkbox">&nbsp;Beauty Clinic<br>
-                        <input type="checkbox">&nbsp;Division Inc.<br>
+                        <label><input type="checkbox" id="chk1" onclick="showOne()"> Blind Spots Inc.<br></label>
+                        <label><input type="checkbox" id="chk2" onclick="showTwo()"> Dispatcher Inc.<br></label>
+                        <label><input type="checkbox" id="chk3" onclick="showThree()"> ACME SR<br></label>
+                        <label><input type="checkbox" id="chk4" onclick="showFour()">Novelty I.S<br></label>
+                        <label><input type="checkbox" id="chk5" onclick="showFive()">Beauty Clinic<br></label>
                     </div>
                 </div>
             </div>
+            <nav class="dashboard-settings-nav">
+                <label for="settings"><i class="fa-solid fa-gear"></i></label>
+                <input type="radio" name="set" id="settings">
+                <div class="settings-block">
+                    <div class="settings-block-header">
+                        <h3>App Settings</h3>
+                        <label for="settings-end"><i class="fa-solid fa-xmark"></i></label>
+                        <input type="radio" name="set" id="settings-end">
+                    </div>
+                    <div class="settings-block-color">
+                        <h5>primary color</h5>
+                        <div>
+                            <label for="green"><input type="radio" name="color" id="green"> Green</label>
+                        </div>
+                        <div>
+                            <label for="pink"><input type="radio" name="color" id="pink"> Pink</label>
+                        </div>
+                        <div>
+                            <label for="orange"><input type="radio" name="color" id="orange"> Orange</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="color" id="blue" checked>
+                            <label for="blue">Blue</label>
+                        </div>
+                    </div>
+                    <div class="settings-block-theme">
+                        <h5>color schema</h5>
+                        <div>
+                            <input type="radio" name="theme" id="light">
+                            <label for="light"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="none">
+                                    <path fill="#fff" fill-opacity="0.01"
+                                        d="M12 15.5c2.4853 0 4.5-2.0147 4.5-4.5S14.4853 6.5 12 6.5 7.5 8.5147 7.5 11s2.0147 4.5 4.5 4.5Z">
+                                    </path>
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 2v1.8m0 14.4V20m-7.2-9H3m3.8827-5.1173L5.6099 4.6099m11.5074 1.2728 1.2728-1.2728M6.8827 16.121l-1.2728 1.2728m11.5074-1.2728 1.2728 1.2728M21 11h-1.8m-2.7 0c0 2.4853-2.0147 4.5-4.5 4.5S7.5 13.4853 7.5 11 9.5147 6.5 12 6.5s4.5 2.0147 4.5 4.5Z">
+                                    </path>
+                                </svg>
+                                Light
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="theme" id="dark">
+                            <label for="dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="none">
+                                    <path fill="#fff" fill-opacity="0.01" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M22 15.8442c-1.3134.594-2.7714.9246-4.3065.9246-5.7782 0-10.4623-4.6841-10.4623-10.4623 0-1.5351.3306-2.9931.9246-4.3065C4.5258 3.6416 2 7.2947 2 11.5377 2 17.3159 6.6841 22 12.4623 22c4.243 0 7.8961-2.5258 9.5377-6.1558Z">
+                                    </path>
+                                </svg>
+                                Dark
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </section>
     </div>
+    <script>
+
+        function showOne() {
+            let bl = document.getElementById("chk1");
+            let blin = document.getElementById("blind");
+            let dis = document.getElementById("dispatc");
+            let ac = document.getElementById("acme");
+            let nov = document.getElementById("novelty");
+            let bea = document.getElementById("beauty");
+            let mat = document.getElementById("matt");
+            let pen = document.getElementById("in-pen");
+            let cancel = document.getElementById("in-cancel");
+            let paid_3 = document.getElementById("in-paid-3");
+            let paid_1 = document.getElementById("in-paid-1");
+
+            if (bl.checked == true) {
+                blin.style.display = "grid";
+                blin.style.border = "none";
+                // dis.style.display = "none";
+                ac.style.display = "none";
+                nov.style.display = "none";
+                bea.style.display = "none";
+                mat.style.display = "none";
+                pen.style.display = "none";
+                cancel.style.display = "none";
+                paid_3.style.display = "none";
+                paid_1.style.display = "block";
+
+            }
+            else {
+                blind.style.display = "grid";
+                // dis.style.display = "grid";
+                ac.style.display = "grid";
+                nov.style.display = "grid";
+                bea.style.display = "grid";
+                mat.style.display = "grid";
+                pen.style.display = "block";
+                cancel.style.display = "block";
+                paid_1.style.display = "none";
+                paid_3.style.display = "block";
+            }
+        }
+
+        function showTwo() {
+            let disPatch = document.getElementById("chk2");
+            let blin = document.getElementById("blind");
+            let dis = document.getElementById("dispatch");
+            let ac = document.getElementById("acme");
+            let nov = document.getElementById("novelty");
+            let bea = document.getElementById("beauty");
+            let mat = document.getElementById("matt");
+            let pen = document.getElementById("in-pen");
+            let cancel = document.getElementById("in-cancel");
+            let paid_3 = document.getElementById("in-paid-3");
+            let paid_1 = document.getElementById("in-paid-1");
+
+            if (disPatch.checked == true) {
+                blin.style.display = "none";
+                dis.style.display = "grid";
+                dis.style.border = "none";
+                ac.style.display = "none";
+                nov.style.display = "none";
+                bea.style.display = "none";
+                mat.style.display = "none";
+                pen.style.display = "none";
+                cancel.style.display = "none";
+                paid_3.style.display = "none";
+                paid_1.style.display = "block";
+
+            }
+            else {
+                blind.style.display = "grid";
+                dis.style.display = "none";
+                ac.style.display = "grid";
+                nov.style.display = "grid";
+                bea.style.display = "grid";
+                mat.style.display = "grid";
+                pen.style.display = "block";
+                cancel.style.display = "block";
+                paid_1.style.display = "none";
+                paid_3.style.display = "block";
+            }
+        }
+        function showThree() {
+            let acme_srl = document.getElementById("chk3");
+            let blin = document.getElementById("blind");
+            let dis = document.getElementById("dispatch");
+            let ac = document.getElementById("acme");
+            let nov = document.getElementById("novelty");
+            let bea = document.getElementById("beauty");
+            let mat = document.getElementById("matt");
+            let pen = document.getElementById("in-pen");
+            let cancel = document.getElementById("in-cancel");
+            let paid_3 = document.getElementById("in-paid-3");
+            let paid_1 = document.getElementById("in-paid-1");
+
+            if (acme_srl.checked == true) {
+                blin.style.display = "none";
+                dis.style.display = "none";
+                ac.style.display = "grid";
+                ac.style.border = "none";
+                nov.style.display = "none";
+                bea.style.display = "none";
+                mat.style.display = "none";
+                pen.style.display = "none";
+                cancel.style.display = "none";
+                paid_3.style.display = "none";
+                paid_1.style.display = "block";
+
+            }
+            else {
+                blind.style.display = "grid";
+                dis.style.display = "none";
+                ac.style.display = "grid";
+                nov.style.display = "grid";
+                bea.style.display = "grid";
+                mat.style.display = "grid";
+                pen.style.display = "block";
+                cancel.style.display = "block";
+                paid_1.style.display = "none";
+                paid_3.style.display = "block";
+            }
+        }
+        function showFour() {
+            let novel = document.getElementById("chk4");
+            let blin = document.getElementById("blind");
+            let dis = document.getElementById("dispatch");
+            let ac = document.getElementById("acme");
+            let nov = document.getElementById("novelty");
+            let bea = document.getElementById("beauty");
+            let mat = document.getElementById("matt");
+            let pen = document.getElementById("in-pen");
+            let cancel = document.getElementById("in-cancel");
+            let paid_3 = document.getElementById("in-paid-3");
+            let paid_1 = document.getElementById("in-paid-1");
+
+            if (novel.checked == true) {
+                blin.style.display = "none";
+                dis.style.display = "none";
+                ac.style.display = "none";
+                nov.style.display = "grid";
+                nov.style.border = "none";
+                bea.style.display = "none";
+                mat.style.display = "none";
+                pen.style.display = "none";
+                cancel.style.display = "none";
+                paid_3.style.display = "none";
+                paid_1.style.display = "block";
+
+            }
+            else {
+                blind.style.display = "grid";
+                dis.style.display = "none";
+                ac.style.display = "grid";
+                nov.style.display = "none";
+                bea.style.display = "grid";
+                mat.style.display = "grid";
+                pen.style.display = "block";
+                cancel.style.display = "block";
+                paid_1.style.display = "none";
+                paid_3.style.display = "block";
+            }
+        }
+        function showFive() {
+            let beauty_clinic = document.getElementById("chk5");
+            let blin = document.getElementById("blind");
+            let dis = document.getElementById("dispatch");
+            let ac = document.getElementById("acme");
+            let nov = document.getElementById("novelty");
+            let bea = document.getElementById("beauty");
+            let mat = document.getElementById("matt");
+            let pen = document.getElementById("in-pen");
+            let cancel = document.getElementById("in-cancel");
+            let paid_3 = document.getElementById("in-paid-3");
+            let paid_1 = document.getElementById("in-paid-1");
+
+            if (beauty_clinic.checked == true) {
+                blin.style.display = "none";
+                dis.style.display = "none";
+                ac.style.display = "none";
+                nov.style.display = "none";
+                nov.style.border = "none";
+                bea.style.display = "grid";
+                mat.style.display = "none";
+                pen.style.display = "none";
+                cancel.style.display = "none";
+                paid_3.style.display = "none";
+                paid_1.style.display = "block";
+
+            }
+            else {
+                blind.style.display = "grid";
+                dis.style.display = "none";
+                ac.style.display = "grid";
+                nov.style.display = "none";
+                bea.style.display = "grid";
+                mat.style.display = "grid";
+                pen.style.display = "block";
+                cancel.style.display = "block";
+                paid_1.style.display = "none";
+                paid_3.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
