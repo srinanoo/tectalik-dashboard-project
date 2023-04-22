@@ -15,7 +15,6 @@ body {
 
 }
 
-
 img {
     max-width: 100%;
 }
@@ -495,26 +494,32 @@ label[for="open"] {
     --background-color: rgb(17, 25, 39);
     --dashed-color: rgb(45, 55, 72);
     --header-blur-color: rgba(14, 19, 32, 0.8);
+    --invoice-grey-color: rgb(118,115,127);
+    --invoice-paid: rgb(28, 172, 76);
 }
 
 /* ***********************settings-css-end******************* */
 
-.invoice {
+/* .invoice,.invoice-2 {
     font-family: Inter;
     width: 90%;
     margin: auto;
-}
+} */
 
 #previous,
 #next,
 #up,
-#filter,
 #pls,
+#filter,
 #fils {
     display: none;
 }
 
-.invoice-2 {
+#pls{
+    padding: 0 10px;
+}
+
+.invoice-2{
     display: none;
 }
 
@@ -526,20 +531,9 @@ label[for="open"] {
     display: none;
 }
 
-.invoice-2 {
-    font-family: Inter;
-    width: 90%;
-    margin: auto;
-}
-
-.invoice,
-.invoice-2 {
-    position: relative;
-}
 
 .in {
-    display: grid;
-    grid-template-columns: 30% 20%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -551,48 +545,44 @@ label[for="open"] {
 
 
 .in .but {
-    display: grid;
-    grid-template-columns: repeat(2, 45%);
+    display: flex;
     justify-content: space-between;
 
 }
 
 .in button {
-    background-color: rgba(99, 102, 241, 1);
-    color: #ffffff;
-    border: solid 1px;
+    background-color:var(--primary);
+    color:#ffffff;
+    border: solid 1px var(--white);
     border-radius: 10px;
     padding: 10px 5px;
     text-align: center;
     cursor: pointer;
 }
 
+.invoice,
+.invoice-2 {
+    padding: 48px 20px 48px 70px;
+}
+
 .invoice label:hover,
 .invoice-2 label:hover {
     cursor: pointer;
-    padding: 5px;
     border-radius: 50%;
+    color: black;
 }
 
-label[for="previous"]:hover,
-label[for="next"]:hover,
-label[for="up"]:hover {
-    background-color: rgb(182, 169, 169);
-}
+
 
 label[for="filter"]:hover {
-    background-color: rgb(238, 235, 235);
     border-radius: 10px;
-    /* padding: 10px 12px; */
-    padding: 10px 5px;
-
 }
 
 #filter:checked~.invoice,
 #filter:checked~.invoice-2 {
-    width: 80%;
-    margin: 0 0 0 20%;
-    padding: 0 20px 0 0;
+    width: 63%;
+    margin-left: 35%;
+    padding: 48px 20px;
 }
 
 #filter:checked~div .but button:nth-child(2) {
@@ -604,7 +594,7 @@ label[for="filter"]:hover {
     background-color: #ffffff;
     color: black;
     border: none;
-    padding: 12px;
+    padding: 10px;
 }
 
 .details-but>#preview:hover {
@@ -612,7 +602,7 @@ label[for="filter"]:hover {
 }
 
 .details-but>#file-down:hover {
-    background-color: rgb(84, 86, 206);
+    background-color: var(--primary)
 }
 
 #file-down>a {
@@ -620,20 +610,21 @@ label[for="filter"]:hover {
 }
 
 .but button:first-child {
-    background-color: #ffffff;
-    border: 1px #ffffff;
-    color: #050505;
+    background-color: var(--white);
+    border: 1px white;
+    color: var(--black);
+    margin-right: 25px;
 }
 
 .but button:hover :not(:last-child) {
-    background-color: rgba(99, 102, 241, 0.2);
+    background-color: rgba(4, 253, 79, 0.2);
 }
 
 .but button:nth-child(2) {
     position: absolute;
-    background-color: #ffffff;
-    border: 1px #ffffff;
-    color: #050505;
+    background-color: var(--white);
+    border: 1px white;
+    color: var(--black);
     display: none;
     padding: 10px 14px;
 }
@@ -646,21 +637,29 @@ label[for="filter"]:hover {
 }
 
 .invo {
-    display: grid;
-    grid-template-columns: 20% 75%;
-    justify-content: space-between;
+    display: flex;
+    justify-content: start;
     align-items: center;
-    border: solid 1px rgb(241, 237, 237);
+    border: solid 1px var(--details-color);
     border-radius: 20px;
     padding: 20px;
-    color: rgb(128, 128, 128);
+    color: gray;
     line-height: 1.6;
+}
+
+.invo svg {
+    vertical-align: bottom;
 }
 
 .invo>div:first-child {
     padding: 12px;
     border-radius: 50%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 30px;
 }
 
 .invo>div:last-child>div:nth-child(2) {
@@ -686,14 +685,12 @@ label[for="filter"]:hover {
 
 .prepaid {
     font-family: Inter;
-    border: 1px solid #f2f4f7;
     border-radius: 20px;
-    /* padding: 20px o; */
-    box-shadow: 2px 2px 10px 1px #f2f4f7;
+    box-shadow: 2px 2px 10px 1px var(--details-color);
 }
 
 .prepaid>div:not(:last-child) {
-    border-bottom: 1px solid #f2f4f7;
+    border-bottom: 1px solid var(--details-color);
 }
 
 .prepaid>div {
@@ -702,7 +699,7 @@ label[for="filter"]:hover {
 
 .paid {
     display: grid;
-    grid-template-columns: 20% 15% 15% 15% 10% 10%;
+    grid-template-columns: 25% 10% 15% 15% 10% 5%;
     align-items: center;
     justify-content: space-between;
     font-weight: bold;
@@ -710,8 +707,7 @@ label[for="filter"]:hover {
 }
 
 .as {
-    display: grid;
-    grid-template-columns: 20% 74%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 
@@ -722,6 +718,10 @@ label[for="filter"]:hover {
     border-radius: 50%;
     text-align: center;
     padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .as>div:last-child {
@@ -753,8 +753,8 @@ label[for="filter"]:hover {
 }
 
 .paid>div:nth-child(6) i:hover {
-    background-color: #dce0df;
-    padding: 7px;
+    background-color: rgb(231, 229, 229);
+    color: #000000;
     border-radius: 50%;
     cursor: pointer;
     text-align: center;
@@ -784,9 +784,18 @@ label[for="filter"]:hover {
     justify-content: end;
 }
 
-#ins {
+.rp select {
+    border: none;
+    color: gray;
+}
+
+.rp select>option #ins {
     padding: 10px 0;
 }
+
+/* #ins {
+    padding: 10px 0;
+} */
 
 #ins a {
     text-decoration: none;
@@ -813,7 +822,7 @@ label[for="filter"]:hover {
 
 .in .as>div:nth-child(2)>:last-child,
 .issue-bill>:last-child p {
-    color: #808080;
+    color: var(--gray);
 }
 
 .in-in {
@@ -825,8 +834,7 @@ label[for="filter"]:hover {
     margin: 0 6px;
 }
 
-.list-bill,
-.prepaid {
+.list-bill {
     padding: 30px 0;
 }
 
@@ -843,7 +851,7 @@ label[for="filter"]:hover {
 
 .issue-bill>:last-child h3 {
     font-size: 2em;
-    color: #0b815a;
+    color: var(--invoice-paid);
     margin: 0;
 }
 
@@ -866,7 +874,6 @@ label[for="filter"]:hover {
 .desc {
     display: grid;
     grid-template-columns: 10% 50% 10% 18% 12%;
-    justify-content: space-between;
 }
 
 .desc1>div {
@@ -882,11 +889,11 @@ label[for="filter"]:hover {
 }
 
 .desc1>:first-child {
-    background-color: rgb(194, 194, 194);
+    background-color: var(--details-color);
 }
 
 .desc>div:last-child :first-child {
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 /* .main h1 {
@@ -3255,9 +3262,10 @@ input#ftwo,
 .filter-nav {
     display: none;
     border: solid 1px rgb(236, 230, 230);
-    width: 15%;
+    width: 25%;
     top: 15px;
-    margin: 5px;
+    margin-left: 20%;
+    margin: 5px 5px 5px 20px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px 2px rgb(224, 218, 218);
@@ -3505,6 +3513,44 @@ label[for="filter-to"] {
     max-height: 200px;
     width: 100%;
     overflow-y: scroll;
+}
+
+.paid a {
+    color: #000000;
+}
+
+.filter-nav input,
+.filter-nav label {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.prepaid i {
+    color: var(--gray);
+    font-size: 1.3em;
+}
+
+#chk1:checked~.invoice {
+    display: none;
+}
+
+.filter-checkbox-check>label {
+    cursor: pointer;
+}
+
+#in-paid-1,
+#dispatch,
+#novelty {
+    display: none;
+}
+
+.prepaid p {
+    margin: 0;
+    line-height: 2;
+}
+
+#filter:checked~.as {
+    margin: 0;
 }
 
 .log_box_container {
