@@ -494,7 +494,7 @@ label[for="open"] {
     --background-color: rgb(17, 25, 39);
     --dashed-color: rgb(45, 55, 72);
     --header-blur-color: rgba(14, 19, 32, 0.8);
-    --invoice-grey-color: rgb(118,115,127);
+    --invoice-grey-color: rgb(118, 115, 127);
     --invoice-paid: rgb(28, 172, 76);
 }
 
@@ -515,11 +515,11 @@ label[for="open"] {
     display: none;
 }
 
-#pls{
+#pls {
     padding: 0 10px;
 }
 
-.invoice-2{
+.invoice-2 {
     display: none;
 }
 
@@ -551,8 +551,8 @@ label[for="open"] {
 }
 
 .in button {
-    background-color:var(--primary);
-    color:#ffffff;
+    background-color: var(--primary);
+    color: #ffffff;
     border: solid 1px var(--white);
     border-radius: 10px;
     padding: 10px 5px;
@@ -583,10 +583,6 @@ label[for="filter"]:hover {
     width: 63%;
     margin-left: 35%;
     padding: 48px 20px;
-}
-
-#filter:checked~div .but button:nth-child(2) {
-    display: block;
 }
 
 
@@ -620,14 +616,6 @@ label[for="filter"]:hover {
     background-color: rgba(4, 253, 79, 0.2);
 }
 
-.but button:nth-child(2) {
-    position: absolute;
-    background-color: var(--white);
-    border: 1px white;
-    color: var(--black);
-    display: none;
-    padding: 10px 14px;
-}
 
 .gri-3 {
     font-family: plusSans;
@@ -680,7 +668,6 @@ label[for="filter"]:hover {
 .cancel h6 {
     font-size: 1em;
     color: #808080;
-    /* text-align: justify; */
 }
 
 .prepaid {
@@ -699,7 +686,7 @@ label[for="filter"]:hover {
 
 .paid {
     display: grid;
-    grid-template-columns: 25% 10% 15% 15% 10% 5%;
+    grid-template-columns: 13% 10% 15% 15% 10% 5%;
     align-items: center;
     justify-content: space-between;
     font-weight: bold;
@@ -3464,7 +3451,7 @@ input#ftwo,
 }
 
 .filter-search-main input {
-    padding: 30px 10px 10px;
+    padding: 20px;
     width: 100%;
     border-radius: 10px;
     outline: none;
@@ -3478,7 +3465,7 @@ label[for="filter-search"] {
     cursor: text;
     color: var(--gray);
     font-size: 0.9rem;
-    font-weight: 500;
+    /* font-weight: 500; */
     transition: all 300ms;
 
 }
@@ -3488,18 +3475,19 @@ label[for="filter-search"] {
 #filter-to:focus+label[for="filter-to"] {
     top: 5px;
     font-size: 0.7rem;
+    padding: 0;
 }
 
 label[for="filter-from"],
 label[for="filter-to"] {
     width: 80%;
     position: absolute;
-    top: 20px;
-    left: 8px;
+    top: 16px;
+    left: 20px;
     cursor: text;
     color: var(--gray);
-    font-size: 1.2em;
-    font-weight: 500;
+    font-size: 1rem;
+    /* font-weight: 500; */
     transition: all 300ms;
     background-color: white;
     padding: 5px 5px 4px 3px;
@@ -3522,7 +3510,12 @@ label[for="filter-to"] {
 .filter-nav input,
 .filter-nav label {
     background-color: var(--white);
-    color: var(--black);
+    /* color: var(--black); */
+}
+
+#filter-search{
+    padding-left: 45px;
+    font-size: 1em;
 }
 
 .prepaid i {
@@ -3549,8 +3542,16 @@ label[for="filter-to"] {
     line-height: 2;
 }
 
-#filter:checked~.as {
-    margin: 0;
+#filter:checked~div .paid {
+    grid-template-columns: 20% 10% 15% 15% 10% 5%;
+}
+
+label[for="filter"]:hover {
+    background-color: #f0f0f0;
+}
+
+#plus-i:hover {
+    background-color: #5400ff;
 }
 
 .log_box_container {
