@@ -48,7 +48,15 @@
                     <div class="prepaid">
                         <div class="issue-bill">
                             <div>
-                                <div><img src="images/favicon-16x16.png" alt=""></div>
+                                <div><svg fill="none" height="100%" viewBox="0 0 24 24" width="29px" id="diamond"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.16"
+                                            d="M7.242 11.083c.449-1.674 2.17-3.394 3.843-3.843l10.434-2.796c1.673-.448 2.666.545 2.218 2.218L20.94 17.096c-.449 1.674-2.17 3.394-3.843 3.843L6.664 23.735c-1.673.448-2.666-.545-2.218-2.218l2.796-10.434Z"
+                                            fill="var(--primary)"></path>
+                                        <path
+                                            d="M3.06 6.9c.448-1.674 2.168-3.394 3.842-3.843L17.336.261c1.673-.448 2.667.545 2.218 2.218l-2.796 10.434c-.449 1.674-2.169 3.394-3.843 3.843L2.481 19.552C.808 20-.185 19.007.263 17.334L3.06 6.9Z"
+                                            fill="var(--primary)"></path>
+                                    </svg></div>
                                 <div>www.devias.io</div>
                             </div>
                             <div></div>
@@ -148,6 +156,63 @@
                     </div>
                 </div>
             </div>
+            <nav class="dashboard-settings-nav">
+                <label for="settings"><i class="fa-solid fa-gear"></i></label>
+                <input type="radio" name="set" id="settings">
+                <div class="settings-block">
+                    <div class="settings-block-header">
+                        <h3>App Settings</h3>
+                        <label for="settings-end"><i class="fa-solid fa-xmark"></i></label>
+                        <input type="radio" name="set" id="settings-end">
+                    </div>
+                    <div class="settings-block-color">
+                        <h5>primary color</h5>
+                        <div>
+                            <label for="green"><input type="radio" name="color" id="green"> Green</label>
+                        </div>
+                        <div>
+                            <label for="pink"><input type="radio" name="color" id="pink"> Pink</label>
+                        </div>
+                        <div>
+                            <label for="orange"><input type="radio" name="color" id="orange"> Orange</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="color" id="blue" checked>
+                            <label for="blue">Blue</label>
+                        </div>
+                    </div>
+                    <div class="settings-block-theme">
+                        <h5>color schema</h5>
+                        <div>
+                            <input type="radio" name="theme" id="light">
+                            <label for="light"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="none">
+                                    <path fill="#fff" fill-opacity="0.01"
+                                        d="M12 15.5c2.4853 0 4.5-2.0147 4.5-4.5S14.4853 6.5 12 6.5 7.5 8.5147 7.5 11s2.0147 4.5 4.5 4.5Z">
+                                    </path>
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 2v1.8m0 14.4V20m-7.2-9H3m3.8827-5.1173L5.6099 4.6099m11.5074 1.2728 1.2728-1.2728M6.8827 16.121l-1.2728 1.2728m11.5074-1.2728 1.2728 1.2728M21 11h-1.8m-2.7 0c0 2.4853-2.0147 4.5-4.5 4.5S7.5 13.4853 7.5 11 9.5147 6.5 12 6.5s4.5 2.0147 4.5 4.5Z">
+                                    </path>
+                                </svg>
+                                Light
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="theme" id="dark">
+                            <label for="dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="none">
+                                    <path fill="#fff" fill-opacity="0.01" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M22 15.8442c-1.3134.594-2.7714.9246-4.3065.9246-5.7782 0-10.4623-4.6841-10.4623-10.4623 0-1.5351.3306-2.9931.9246-4.3065C4.5258 3.6416 2 7.2947 2 11.5377 2 17.3159 6.6841 22 12.4623 22c4.243 0 7.8961-2.5258 9.5377-6.1558Z">
+                                    </path>
+                                </svg>
+                                Dark
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </section>
     </div>
 </body>
