@@ -76,7 +76,7 @@ a {
 .main {
     width: 82%;
     margin-left: 18%;
-    position: fixed;
+    display: flex;
     top: 0;
     right: 0;
     overflow: auto;
@@ -89,6 +89,7 @@ a {
     align-items: center;
 
 }
+
 
 .homepage-row1 div:first-child {
     animation: logoanimation 600ms cubic-bezier(0.42, 0, 0.69, 1.54);
